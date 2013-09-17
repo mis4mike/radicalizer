@@ -1,0 +1,384 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'font-awesome' ]
+2 info using npm@1.3.8
+3 info using node@v0.10.17
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'font-awesome', null ]
+7 verbose cache add name=undefined spec="font-awesome" args=["font-awesome",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'font-awesome',
+8 verbose parsed url   path: 'font-awesome',
+8 verbose parsed url   href: 'font-awesome' }
+9 silly lockFile 17645f7a-font-awesome font-awesome
+10 verbose lock font-awesome /home/mike/.npm/17645f7a-font-awesome.lock
+11 silly lockFile 17645f7a-font-awesome font-awesome
+12 silly lockFile 17645f7a-font-awesome font-awesome
+13 verbose addNamed [ 'font-awesome', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 86ae45a4-font-awesome font-awesome@
+16 verbose lock font-awesome@ /home/mike/.npm/86ae45a4-font-awesome.lock
+17 silly addNameRange { name: 'font-awesome', range: '*', hasData: false }
+18 verbose url raw font-awesome
+19 verbose url resolving [ 'https://registry.npmjs.org/', './font-awesome' ]
+20 verbose url resolved https://registry.npmjs.org/font-awesome
+21 info trying registry request attempt 1 at 13:03:36
+22 verbose etag "6EX25N7VSY93DLR3EQMZ5LQ30"
+23 http GET https://registry.npmjs.org/font-awesome
+24 http 304 https://registry.npmjs.org/font-awesome
+25 silly registry.get cb [ 304,
+25 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+25 silly registry.get     etag: '"6EX25N7VSY93DLR3EQMZ5LQ30"',
+25 silly registry.get     date: 'Tue, 17 Sep 2013 17:03:44 GMT',
+25 silly registry.get     'content-length': '0' } ]
+26 verbose etag font-awesome from cache
+27 silly addNameRange number 2 { name: 'font-awesome', range: '*', hasData: true }
+28 silly addNameRange versions [ 'font-awesome', [ '3.2.1' ] ]
+29 verbose addNamed [ 'font-awesome', '3.2.1' ]
+30 verbose addNamed [ '3.2.1', '3.2.1' ]
+31 silly lockFile 8d850ca0-font-awesome-3-2-1 font-awesome@3.2.1
+32 verbose lock font-awesome@3.2.1 /home/mike/.npm/8d850ca0-font-awesome-3-2-1.lock
+33 silly lockFile 8d850ca0-font-awesome-3-2-1 font-awesome@3.2.1
+34 silly lockFile 8d850ca0-font-awesome-3-2-1 font-awesome@3.2.1
+35 silly lockFile 86ae45a4-font-awesome font-awesome@
+36 silly lockFile 86ae45a4-font-awesome font-awesome@
+37 silly resolved [ { name: 'font-awesome',
+37 silly resolved     description: 'The iconic font designed for Bootstrap',
+37 silly resolved     version: '3.2.1',
+37 silly resolved     keywords: [ 'font', 'awesome', 'fontawesome', 'icon', 'font', 'bootstrap' ],
+37 silly resolved     homepage: 'http://fontawesome.io/',
+37 silly resolved     author:
+37 silly resolved      { name: 'Dave Gandy',
+37 silly resolved        email: 'dave@fontawesome.io',
+37 silly resolved        url: 'http://twitter.com/davegandy' },
+37 silly resolved     repository:
+37 silly resolved      { type: 'git',
+37 silly resolved        url: 'https://github.com/FortAwesome/Font-Awesome.git' },
+37 silly resolved     contributors: [ [Object], [Object], [Object] ],
+37 silly resolved     licenses: [ [Object], [Object] ],
+37 silly resolved     dependencies: { jekyll: '1.0.2', lessc: '1.3.3' },
+37 silly resolved     readme: '#[Font Awesome v3.2.1](http://fontawesome.io)\n###the iconic font designed for Bootstrap\n\nFont Awesome is a full suite of 361 pictographic icons for easy scalable vector graphics on websites, created and\nmaintained by [Dave Gandy](http://twitter.com/davegandy). Stay up to date [@fontawesome](http://twitter.com/fontawesome).\n\nGet started at http://fontawesome.io!\n\n##License\n- The Font Awesome font is licensed under the SIL OFL 1.1:\n  - http://scripts.sil.org/OFL\n- Font Awesome CSS, LESS, and SASS files are licensed under the MIT License:\n  - http://opensource.org/licenses/mit-license.html\n- The Font Awesome documentation is licensed under the CC BY 3.0 License:\n  - http://creativecommons.org/licenses/by/3.0/\n- Attribution is no longer required as of Font Awesome 3.0, but much appreciated:\n  - `Font Awesome by Dave Gandy - http://fontawesome.io`\n- Full details: http://fontawesome.io/license\n\n##Changelog\n- v3.0.0 - all icons redesigned from scratch, optimized for Bootstrap\'s 14px default\n- v3.0.1 - much improved rendering in webkit, various bug fixes\n- v3.0.2 - much improved rendering and alignment in IE7\n- v3.1.0 - Added 54 icons, icon stacking styles, flipping and rotating icons, removed SASS support\n- [v3.1.1 GitHub milestones](https://github.com/FortAwesome/Font-Awesome/issues?milestone=4&page=1&state=closed)\n- [v3.2.0 GitHub milestones](https://github.com/FortAwesome/Font-Awesome/issues?milestone=3&page=1&state=closed)\n- [v3.2.1 GitHub milestones](https://github.com/FortAwesome/Font-Awesome/issues?milestone=5&page=1&state=closed)\n\n##Versioning\n\nFont Awesome will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered with the following format:\n\n`<major>.<minor>.<patch>`\n\nAnd constructed with the following guidelines:\n\n* Breaking backward compatibility bumps the major (and resets the minor and patch)\n* New additions, including new icons, without breaking backward compatibility bumps the minor (and resets the patch)\n* Bug fixes and misc changes bumps the patch\n\nFor more information on SemVer, please visit http://semver.org.\n\n##Author\n- Email: dave@fontawesome.io\n- Twitter: http://twitter.com/davegandy\n- GitHub: https://github.com/davegandy\n- Work: Lead Product Designer @ http://kyru.us\n\n## Hacking on Font Awesome\n\nFrom the root of the repository, install the tools used to develop.\n\n    $ bundle install\n    $ npm install\n\nBuild the project and documentation:\n\n    $ bundle exec jekyll build\n\nOr serve it on a local server on http://localhost:7998/Font-Awesome/:\n\n    $ bundle exec jekyll serve\n',
+37 silly resolved     readmeFilename: 'README.md',
+37 silly resolved     bugs: { url: 'https://github.com/FortAwesome/Font-Awesome/issues' },
+37 silly resolved     _id: 'font-awesome@3.2.1',
+37 silly resolved     _from: 'font-awesome@' } ]
+38 info install font-awesome@3.2.1 into /home/mike/workspace/radicalizer
+39 info installOne font-awesome@3.2.1
+40 info /home/mike/workspace/radicalizer/node_modules/font-awesome unbuild
+41 verbose tar unpack /home/mike/.npm/font-awesome/3.2.1/package.tgz
+42 silly lockFile 769bf1b2-alizer-node-modules-font-awesome tar:///home/mike/workspace/radicalizer/node_modules/font-awesome
+43 verbose lock tar:///home/mike/workspace/radicalizer/node_modules/font-awesome /home/mike/.npm/769bf1b2-alizer-node-modules-font-awesome.lock
+44 silly lockFile 2bcfc1be-m-font-awesome-3-2-1-package-tgz tar:///home/mike/.npm/font-awesome/3.2.1/package.tgz
+45 verbose lock tar:///home/mike/.npm/font-awesome/3.2.1/package.tgz /home/mike/.npm/2bcfc1be-m-font-awesome-3-2-1-package-tgz.lock
+46 silly gunzTarPerm modes [ '755', '644' ]
+47 silly gunzTarPerm extractEntry package.json
+48 silly gunzTarPerm extractEntry .npmignore
+49 silly gunzTarPerm extractEntry README.md
+50 silly gunzTarPerm extractEntry Gemfile
+51 silly gunzTarPerm extractEntry Gemfile.lock
+52 silly gunzTarPerm extractEntry src/design.html
+53 silly gunzTarPerm extractEntry src/CNAME
+54 silly gunzTarPerm extractEntry src/_includes/jumbotron-slider.html
+55 silly gunzTarPerm extractEntry src/_includes/ads/carbon-dark-vertical.html
+56 silly gunzTarPerm extractEntry src/_includes/ads/carbon-light-horizontal.html
+57 silly gunzTarPerm extractEntry src/_includes/ads/carbon-light-vertical.html
+58 silly gunzTarPerm extractEntry src/_includes/cheatsheet.html
+59 silly gunzTarPerm extractEntry src/_includes/community/getting-support.html
+60 silly gunzTarPerm extractEntry src/_includes/community/project-milestones.html
+61 silly gunzTarPerm extractEntry src/_includes/community/reporting-bugs.html
+62 silly gunzTarPerm extractEntry src/_includes/community/requesting-new-icons.html
+63 silly gunzTarPerm extractEntry src/_includes/community/submitting-pull-requests.html
+64 silly gunzTarPerm extractEntry src/_includes/community.html
+65 silly gunzTarPerm extractEntry src/_includes/examples/form-inputs.html
+66 silly gunzTarPerm extractEntry src/_includes/examples/animated-spinner.html
+67 silly gunzTarPerm extractEntry src/_includes/examples/bulleted-lists.html
+68 silly gunzTarPerm extractEntry src/_includes/examples/button-dropdowns.html
+69 silly gunzTarPerm extractEntry src/_includes/examples/button-groups.html
+70 silly gunzTarPerm extractEntry src/_includes/examples/buttons.html
+71 silly gunzTarPerm extractEntry src/_includes/examples/custom.html
+72 silly gunzTarPerm extractEntry src/_includes/examples/bordered-pulled.html
+73 silly gunzTarPerm extractEntry src/_includes/examples/inline-icons.html
+74 silly gunzTarPerm extractEntry src/_includes/examples/larger-icons.html
+75 silly gunzTarPerm extractEntry src/_includes/examples/navigation.html
+76 silly gunzTarPerm extractEntry src/_includes/examples/new.html
+77 silly gunzTarPerm extractEntry src/_includes/examples/rotated-flipped.html
+78 silly gunzTarPerm extractEntry src/_includes/examples/stacked.html
+79 silly gunzTarPerm extractEntry src/_includes/examples.html
+80 silly gunzTarPerm extractEntry src/_includes/footer.html
+81 silly gunzTarPerm extractEntry src/_includes/get-started.html
+82 silly gunzTarPerm extractEntry src/_includes/icons/brand.html
+83 silly gunzTarPerm extractEntry src/_includes/icons/currency.html
+84 silly gunzTarPerm extractEntry src/_includes/icons/directional.html
+85 silly gunzTarPerm extractEntry src/_includes/icons/medical.html
+86 silly gunzTarPerm extractEntry src/_includes/icons/new.html
+87 silly gunzTarPerm extractEntry src/_includes/icons/text-editor.html
+88 silly gunzTarPerm extractEntry src/_includes/icons/video-player.html
+89 silly gunzTarPerm extractEntry src/_includes/icons/web-application.html
+90 silly gunzTarPerm extractEntry src/_includes/icons.html
+91 silly gunzTarPerm extractEntry src/_includes/brand-license.html
+92 silly gunzTarPerm extractEntry src/_includes/jumbotron.html
+93 silly gunzTarPerm extractEntry src/_includes/license-code.less
+94 silly gunzTarPerm extractEntry src/_includes/license.html
+95 silly gunzTarPerm extractEntry src/_includes/navbar.html
+96 silly gunzTarPerm extractEntry src/_includes/stripe-ad.html
+97 silly gunzTarPerm extractEntry src/_includes/stripe-social.html
+98 silly gunzTarPerm extractEntry src/_includes/tell-me-thanks.html
+99 silly gunzTarPerm extractEntry src/_includes/tests/rotated-flipped-inside-anchor.html
+100 silly gunzTarPerm extractEntry src/_includes/tests/rotated-flipped-inside-btn.html
+101 silly gunzTarPerm extractEntry src/_includes/tests/rotated-flipped.html
+102 silly gunzTarPerm extractEntry src/_includes/tests/stacked-inside-anchor.html
+103 silly gunzTarPerm extractEntry src/_includes/tests/stacked.html
+104 silly gunzTarPerm extractEntry src/_includes/thanks-to.html
+105 silly gunzTarPerm extractEntry src/_includes/whats-new.html
+106 silly gunzTarPerm extractEntry src/_includes/why.html
+107 silly gunzTarPerm extractEntry src/_layouts/base.html
+108 silly gunzTarPerm extractEntry src/_layouts/icon.html
+109 silly gunzTarPerm extractEntry src/_plugins/icon_page_generator.rb
+110 silly gunzTarPerm extractEntry src/_plugins/site.rb
+111 silly gunzTarPerm extractEntry src/assets/css/prettify.css
+112 silly gunzTarPerm extractEntry src/assets/css/pygments.css
+113 silly gunzTarPerm extractEntry src/assets/font-awesome/font/FontAwesome.otf
+114 silly gunzTarPerm extractEntry src/assets/font-awesome/font/fontawesome-webfont.eot
+115 silly gunzTarPerm extractEntry src/assets/font-awesome/font/fontawesome-webfont.svg
+116 silly gunzTarPerm extractEntry src/assets/font-awesome/font/fontawesome-webfont.ttf
+117 silly gunzTarPerm extractEntry src/assets/font-awesome/font/fontawesome-webfont.woff
+118 silly gunzTarPerm extractEntry src/assets/font-awesome/less/bootstrap.less
+119 silly gunzTarPerm extractEntry src/assets/font-awesome/less/core.less
+120 silly gunzTarPerm extractEntry src/assets/font-awesome/less/extras.less
+121 silly gunzTarPerm extractEntry src/assets/font-awesome/less/font-awesome-ie7.less
+122 silly gunzTarPerm extractEntry src/assets/font-awesome/less/font-awesome.less
+123 silly gunzTarPerm extractEntry src/assets/font-awesome/less/icons.less
+124 silly gunzTarPerm extractEntry src/assets/font-awesome/less/mixins.less
+125 silly gunzTarPerm extractEntry src/assets/font-awesome/less/path.less
+126 silly gunzTarPerm extractEntry src/assets/font-awesome/less/variables.less
+127 silly gunzTarPerm extractEntry src/assets/font-awesome/scss/_bootstrap.scss
+128 silly gunzTarPerm extractEntry src/assets/font-awesome/scss/_core.scss
+129 silly gunzTarPerm extractEntry src/assets/font-awesome/scss/_extras.scss
+130 silly gunzTarPerm extractEntry src/assets/font-awesome/scss/_icons.scss
+131 silly gunzTarPerm extractEntry src/assets/font-awesome/scss/_mixins.scss
+132 silly gunzTarPerm extractEntry src/assets/font-awesome/scss/_path.scss
+133 silly gunzTarPerm extractEntry src/assets/font-awesome/scss/_variables.scss
+134 silly gunzTarPerm extractEntry src/assets/font-awesome/scss/font-awesome-ie7.scss
+135 silly gunzTarPerm extractEntry src/assets/font-awesome/scss/font-awesome.scss
+136 silly gunzTarPerm extractEntry src/assets/ico/favicon.ico
+137 silly gunzTarPerm extractEntry src/assets/img/contribution-sample.png
+138 silly gunzTarPerm extractEntry src/assets/img/fort_awesome.jpg
+139 silly gunzTarPerm extractEntry src/assets/img/glyphicons-halflings-white.png
+140 silly gunzTarPerm extractEntry src/assets/img/glyphicons-halflings.png
+141 silly gunzTarPerm extractEntry src/assets/img/icon-flag.pdf
+142 silly gunzTarPerm extractEntry src/assets/js/ZeroClipboard-1.1.7.min.js
+143 silly gunzTarPerm extractEntry src/assets/js/backbone.min.js
+144 silly gunzTarPerm extractEntry src/assets/js/bootstrap-2.3.1.min.js
+145 silly gunzTarPerm extractEntry src/assets/js/bootstrap-222.min.js
+146 silly gunzTarPerm extractEntry src/assets/js/jquery-1.7.1.min.js
+147 silly gunzTarPerm extractEntry src/assets/js/prettify.min.js
+148 silly gunzTarPerm extractEntry src/assets/js/site.js
+149 silly gunzTarPerm extractEntry src/assets/js/underscore.min.js
+150 silly gunzTarPerm extractEntry src/assets/js/ZeroClipboard-1.1.7.swf
+151 silly gunzTarPerm extractEntry src/assets/less/responsive-768px-979px.less
+152 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/navs.less
+153 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/accordion.less
+154 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/bootstrap.less
+155 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/breadcrumbs.less
+156 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/button-groups.less
+157 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/buttons.less
+158 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/carousel.less
+159 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/close.less
+160 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/code.less
+161 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/component-animations.less
+162 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/dropdowns.less
+163 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/forms.less
+164 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/grid.less
+165 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/hero-unit.less
+166 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/labels-badges.less
+167 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/layouts.less
+168 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/media.less
+169 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/mixins.less
+170 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/modals.less
+171 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/navbar.less
+172 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/alerts.less
+173 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/pager.less
+174 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/pagination.less
+175 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/popovers.less
+176 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/progress-bars.less
+177 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/reset.less
+178 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/responsive-1200px-min.less
+179 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/responsive-767px-max.less
+180 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/responsive-768px-979px.less
+181 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/responsive-navbar.less
+182 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/responsive-utilities.less
+183 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/responsive.less
+184 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/scaffolding.less
+185 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/sprites.less
+186 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/tables.less
+187 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/thumbnails.less
+188 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/tooltip.less
+189 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/type.less
+190 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/utilities.less
+191 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/variables.less
+192 silly gunzTarPerm extractEntry src/assets/less/bootstrap-2.3.2/wells.less
+193 silly gunzTarPerm extractEntry src/assets/less/mixins.less
+194 silly gunzTarPerm extractEntry src/assets/less/responsive-1200px-min.less
+195 silly gunzTarPerm extractEntry src/assets/less/responsive-767px-max.less
+196 silly gunzTarPerm extractEntry src/assets/less/lazy.less
+197 silly gunzTarPerm extractEntry src/assets/less/responsive-navbar.less
+198 silly gunzTarPerm extractEntry src/assets/less/responsive.less
+199 silly gunzTarPerm extractEntry src/assets/less/site.less
+200 silly gunzTarPerm extractEntry src/assets/less/sticky-footer.less
+201 silly gunzTarPerm extractEntry src/assets/less/variables.less
+202 silly gunzTarPerm extractEntry src/cheatsheet.html
+203 silly gunzTarPerm extractEntry src/community.html
+204 silly gunzTarPerm extractEntry src/Makefile
+205 silly gunzTarPerm extractEntry src/examples.html
+206 silly gunzTarPerm extractEntry src/get-started.html
+207 silly gunzTarPerm extractEntry src/icons.html
+208 silly gunzTarPerm extractEntry src/icons.yml
+209 silly gunzTarPerm extractEntry src/index.html
+210 silly gunzTarPerm extractEntry src/license.html
+211 silly gunzTarPerm extractEntry src/test.html
+212 silly gunzTarPerm extractEntry src/whats-new.html
+213 silly gunzTarPerm extractEntry _config.yml
+214 silly gunzTarPerm extractEntry .ruby-version
+215 silly gunzTarPerm extractEntry css/font-awesome-ie7.css
+216 silly gunzTarPerm extractEntry css/font-awesome-ie7.min.css
+217 silly gunzTarPerm extractEntry css/font-awesome.css
+218 silly gunzTarPerm extractEntry css/font-awesome.min.css
+219 silly gunzTarPerm extractEntry font/FontAwesome.otf
+220 silly gunzTarPerm extractEntry font/fontawesome-webfont.eot
+221 silly gunzTarPerm extractEntry font/fontawesome-webfont.svg
+222 silly gunzTarPerm extractEntry font/fontawesome-webfont.ttf
+223 silly gunzTarPerm extractEntry font/fontawesome-webfont.woff
+224 silly gunzTarPerm extractEntry less/bootstrap.less
+225 silly gunzTarPerm extractEntry less/core.less
+226 silly gunzTarPerm extractEntry less/extras.less
+227 silly gunzTarPerm extractEntry less/font-awesome-ie7.less
+228 silly gunzTarPerm extractEntry less/font-awesome.less
+229 silly gunzTarPerm extractEntry less/icons.less
+230 silly gunzTarPerm extractEntry less/mixins.less
+231 silly gunzTarPerm extractEntry less/path.less
+232 silly gunzTarPerm extractEntry less/variables.less
+233 silly gunzTarPerm extractEntry CONTRIBUTING.md
+234 silly gunzTarPerm extractEntry scss/_bootstrap.scss
+235 silly gunzTarPerm extractEntry scss/_core.scss
+236 silly gunzTarPerm extractEntry scss/_extras.scss
+237 silly gunzTarPerm extractEntry scss/_icons.scss
+238 silly gunzTarPerm extractEntry scss/_mixins.scss
+239 silly gunzTarPerm extractEntry scss/_path.scss
+240 silly gunzTarPerm extractEntry scss/_variables.scss
+241 silly gunzTarPerm extractEntry scss/font-awesome-ie7.scss
+242 silly gunzTarPerm extractEntry scss/font-awesome.scss
+243 silly gunzTarPerm extractEntry composer.json
+244 silly lockFile 769bf1b2-alizer-node-modules-font-awesome tar:///home/mike/workspace/radicalizer/node_modules/font-awesome
+245 silly lockFile 769bf1b2-alizer-node-modules-font-awesome tar:///home/mike/workspace/radicalizer/node_modules/font-awesome
+246 silly lockFile 2bcfc1be-m-font-awesome-3-2-1-package-tgz tar:///home/mike/.npm/font-awesome/3.2.1/package.tgz
+247 silly lockFile 2bcfc1be-m-font-awesome-3-2-1-package-tgz tar:///home/mike/.npm/font-awesome/3.2.1/package.tgz
+248 info preinstall font-awesome@3.2.1
+249 verbose readDependencies using package.json deps
+250 verbose readDependencies using package.json deps
+251 verbose cache add [ 'jekyll@1.0.2', null ]
+252 verbose cache add name=undefined spec="jekyll@1.0.2" args=["jekyll@1.0.2",null]
+253 verbose parsed url { protocol: null,
+253 verbose parsed url   slashes: null,
+253 verbose parsed url   auth: null,
+253 verbose parsed url   host: null,
+253 verbose parsed url   port: null,
+253 verbose parsed url   hostname: null,
+253 verbose parsed url   hash: null,
+253 verbose parsed url   search: null,
+253 verbose parsed url   query: null,
+253 verbose parsed url   pathname: 'jekyll@1.0.2',
+253 verbose parsed url   path: 'jekyll@1.0.2',
+253 verbose parsed url   href: 'jekyll@1.0.2' }
+254 verbose cache add name="jekyll" spec="1.0.2" args=["jekyll","1.0.2"]
+255 verbose parsed url { protocol: null,
+255 verbose parsed url   slashes: null,
+255 verbose parsed url   auth: null,
+255 verbose parsed url   host: null,
+255 verbose parsed url   port: null,
+255 verbose parsed url   hostname: null,
+255 verbose parsed url   hash: null,
+255 verbose parsed url   search: null,
+255 verbose parsed url   query: null,
+255 verbose parsed url   pathname: '1.0.2',
+255 verbose parsed url   path: '1.0.2',
+255 verbose parsed url   href: '1.0.2' }
+256 verbose addNamed [ 'jekyll', '1.0.2' ]
+257 verbose addNamed [ '1.0.2', '1.0.2' ]
+258 silly lockFile 13fb4fe4-jekyll-1-0-2 jekyll@1.0.2
+259 verbose lock jekyll@1.0.2 /home/mike/.npm/13fb4fe4-jekyll-1-0-2.lock
+260 verbose cache add [ 'lessc@1.3.3', null ]
+261 verbose cache add name=undefined spec="lessc@1.3.3" args=["lessc@1.3.3",null]
+262 verbose parsed url { protocol: null,
+262 verbose parsed url   slashes: null,
+262 verbose parsed url   auth: null,
+262 verbose parsed url   host: null,
+262 verbose parsed url   port: null,
+262 verbose parsed url   hostname: null,
+262 verbose parsed url   hash: null,
+262 verbose parsed url   search: null,
+262 verbose parsed url   query: null,
+262 verbose parsed url   pathname: 'lessc@1.3.3',
+262 verbose parsed url   path: 'lessc@1.3.3',
+262 verbose parsed url   href: 'lessc@1.3.3' }
+263 verbose cache add name="lessc" spec="1.3.3" args=["lessc","1.3.3"]
+264 verbose parsed url { protocol: null,
+264 verbose parsed url   slashes: null,
+264 verbose parsed url   auth: null,
+264 verbose parsed url   host: null,
+264 verbose parsed url   port: null,
+264 verbose parsed url   hostname: null,
+264 verbose parsed url   hash: null,
+264 verbose parsed url   search: null,
+264 verbose parsed url   query: null,
+264 verbose parsed url   pathname: '1.3.3',
+264 verbose parsed url   path: '1.3.3',
+264 verbose parsed url   href: '1.3.3' }
+265 verbose addNamed [ 'lessc', '1.3.3' ]
+266 verbose addNamed [ '1.3.3', '1.3.3' ]
+267 silly lockFile 0f723923-lessc-1-3-3 lessc@1.3.3
+268 verbose lock lessc@1.3.3 /home/mike/.npm/0f723923-lessc-1-3-3.lock
+269 verbose url raw jekyll/1.0.2
+270 verbose url resolving [ 'https://registry.npmjs.org/', './jekyll/1.0.2' ]
+271 verbose url resolved https://registry.npmjs.org/jekyll/1.0.2
+272 info trying registry request attempt 1 at 13:03:37
+273 http GET https://registry.npmjs.org/jekyll/1.0.2
+274 verbose url raw lessc/1.3.3
+275 verbose url resolving [ 'https://registry.npmjs.org/', './lessc/1.3.3' ]
+276 verbose url resolved https://registry.npmjs.org/lessc/1.3.3
+277 info trying registry request attempt 1 at 13:03:37
+278 http GET https://registry.npmjs.org/lessc/1.3.3
+279 http 404 https://registry.npmjs.org/jekyll/1.0.2
+280 silly registry.get cb [ 404,
+280 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+280 silly registry.get     date: 'Tue, 17 Sep 2013 17:03:46 GMT',
+280 silly registry.get     'content-type': 'application/json',
+280 silly registry.get     'content-length': '52',
+280 silly registry.get     'cache-control': 'must-revalidate' } ]
+281 silly lockFile 13fb4fe4-jekyll-1-0-2 jekyll@1.0.2
+282 silly lockFile 13fb4fe4-jekyll-1-0-2 jekyll@1.0.2
+283 verbose about to build /home/mike/workspace/radicalizer/node_modules/font-awesome
+284 info /home/mike/workspace/radicalizer/node_modules/font-awesome unbuild
+285 info preuninstall font-awesome@3.2.1
+286 info uninstall font-awesome@3.2.1
+287 verbose true,/home/mike/workspace/radicalizer/node_modules,/home/mike/workspace/radicalizer/node_modules unbuild font-awesome@3.2.1
+288 info postuninstall font-awesome@3.2.1
+289 error 404 'jekyll' is not in the npm registry.
+289 error 404 You should bug the author to publish it
+289 error 404
+289 error 404 Note that you can also install from a
+289 error 404 tarball, folder, or http url, or git url.
+290 error System Linux 3.2.0-52-generic-pae
+291 error command "/usr/bin/node" "/usr/bin/npm" "install" "font-awesome"
+292 error cwd /home/mike/workspace/radicalizer
+293 error node -v v0.10.17
+294 error npm -v 1.3.8
+295 error code E404
+296 verbose exit [ 1, true ]

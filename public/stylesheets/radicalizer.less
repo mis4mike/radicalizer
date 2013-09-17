@@ -2,52 +2,87 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: abaddon;
+  src: url('/fonts/abaddon.TTF');
+}
+
 body {
   font-family: sans;
   background-color: #111;
   color: #ccc;
 
   #header {
-
-  }
-  #nav {
-    ul {
-      list-style-type: none;
-
-      li {
-        display: inline-block;
-        padding: 10px;
-      }
+    h1 {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      margin: 6px 65px 0 0;
+      padding: 6px;
+      font-family: abaddon;
+      font-size: 49px;
     }
+    #nav {
+      display: inline-block;
+
+      ul {
+        list-style-type: none;
+
+        li {
+          display: inline-block;
+          padding: 10px;
+          font-weight: bold;
+
+          &.active {
+
+          }
+        }
+      }
+    }    
   }
+
   #content {
     #institutions {
       .list {
         display: inline-block;
         ul {
           list-style-type: none;
+          font-weight: bold;
+          text-transform: uppercase;
+
+          li {
+            font-weight: normal;
+            text-transform: none;
+          }
         }
       }
       .card {
-        width: 500px;
+        width: 610px;
         height: 600px;
         display: inline-block;
         vertical-align: top;
         margin: 0px 24px;
         border: 4px solid #e7e7e7;
         border-radius: 12px;
+        padding: 24px;
 
         h2 {
-          margin: 12px;
+          margin: 0;
         }
 
         .rating-box {
-          max-width: 100px;
+          display: inline-block;
+          max-width: 90px;
           padding: 3px;
           background: #e7e7e7;
           color: #111;
           border-radius: 3px 3px 12px 12px;
-          margin: 0px 12px;
+          margin: 12px 12px 12px 0;
+
+          &.strength {
+            max-width: 110px;
+            vertical-align: top;
+          }
 
           h6 {
             margin: 3px;
@@ -57,31 +92,193 @@ body {
             width: 100%;
             height: 50px;
             border-radius: 3px 3px 12px 12px;
-            padding: 2px 6px;
+            padding: 2px;
             background-color: #111;
             color: #ccc;
+            
+            .buttons {
 
-            .button {
-              width: 18px;
-              height: 18px;
-              display: inline-block;
-              margin: 1px;
-              border: 2px solid #e7e7e7;
-              border-radius: 12px;
-              background-color: #a22;
+              height: 22px;
 
-              &:after {
-                content: "";
-                width: 4px;
-                height: 4px;
-                border-radius: 2px;
-                position: relative;
-                background-color: white;
+              .button {
+                width: 18px;
+                height: 18px;
+                display: inline-block;
+                margin: 1px;
+                border: 2px solid #e7e7e7;
+                border-radius: 12px;
+                background-color: #a22;
+                
+                //Put a shine on it (currently not working with "" content)
+                &:after {
+                  content: "";
+                  display: inline-block;
+                  width: 9px;
+                  height: 9px;
+                  bottom: 5px;
+                  left: 4px;
+                  line-height: 4px;
+                  border-radius: 5px;
+                  position: relative;
+                  background-color: #922;
+                }
+              }
+
+              &.help {
+                .button {
+                  width: 18px;
+                  height: 18px;
+                  display: inline-block;
+                  margin: 1px;
+                  border: 2px solid #e7e7e7;
+                  border-radius: 12px;
+                  background-color: #2a2;
+                
+                  //Put a shine on it
+                  &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 9px;
+                    height: 9px;
+                    bottom: 5px;
+                    left: 4px;
+                    line-height: 4px;
+                    border-radius: 5px;
+                    position: relative;
+                    background-color: #292;
+                  }
+                }
+              }
+
+              &.strength {
+                .button {
+                  background-color: #fcedb4;
+                  &:nth-child(1) {
+                    background-color: #cbb482;
+                    &:after {
+                      content: "";
+                      display: inline-block;
+                      width: 14px;
+                      height: 18px;
+                      bottom: 2px;
+                      left: 2px;
+                      line-height: 4px;
+                      border-radius: 8px;
+                      position: relative;
+                      background-color: #555;
+                    }
+                  }
+                  &:nth-child(2) {
+                    background-color: #f1d39d;
+                    &:after {
+                      content: "";
+                      display: inline-block;
+                      width: 12px;
+                      height: 16px;
+                      bottom: 1px;
+                      left: 4px;
+                      line-height: 4px;
+                      border-radius: 6px;
+                      position: relative;
+                      background-color: #555;
+                    }                  
+                  }
+                  &:nth-child(3) {
+                    background-color: #f1d39d;
+                    &:after {
+                      content: "";
+                      display: inline-block;
+                      width: 9px;
+                      height: 16px;
+                      bottom: 1px;
+                      left: 6px;
+                      line-height: 4px;
+                      border-radius: 0 8px 8px 0;
+                      position: relative;
+                      background-color: #555;
+                    }                 
+                  }
+                  &:nth-child(4) {
+                    background-color: #555;
+                    border-color: #555;
+                    &:after {
+                      content: "";
+                      display: inline-block;
+                      width: 14px;
+                      height: 18px;
+                      bottom: 2px;
+                      left: -2px;
+                      line-height: 4px;
+                      border-radius: 12px 8px 8px 12px;
+                      position: relative;
+                      background-color: #fcedb4;
+                    }                  
+                  }
+                  &:nth-child(5) {
+                    background-color: #fff9c9;
+                    border-color: #fff9c9;                    
+                    &:after {
+                      content: "";
+                      display: none;
+                    }                  
+                  }
+                  &.selected {
+                    vertical-align: top;
+                    -moz-box-shadow: 0px 0px 2px 2px #f1d39d;
+                    -webkit-box-shadow: 0px 0px 2px 2px #f1d39d;
+                     box-shadow: 0px 0px 2px 2px  #f1d39d;
+                  }                                    
+                }
               }
             }
-            .description {
+            .rating-description {
               text-align: center;
               font-size: 10px;
+            }
+          }
+        }
+        .diagram {
+          float: right;
+          height: 200px;
+          width: 200px;
+          border: 3px solid #e7e7e7;
+          border-radius: 12px;
+
+          i {
+            font-size: 30px;
+          }
+          i.icon-arrow-down {
+            display: block;
+            margin: 5px;
+            font-size: 12px;
+          }
+          i.icon-certificate {
+            color: #fff9c9;
+          }
+          i.icon-magic {
+            color: #58d3d3;
+          }
+          i.icon-male {
+            color: #e8c158;
+          }          
+          i.icon-female {
+            color: #e8c158;
+          }
+          .diagram-left {
+            display: inline-block;
+            width: 22%;
+            margin: 10%;
+            text-align: center;
+          }
+          .diagram-right {
+            display: inline-block;
+            vertical-align: top;
+            width: 35%;
+            margin: 10%;
+            font-weight: bold;
+
+            p {
+              margin: 22px 0;
             }
           }
         }
