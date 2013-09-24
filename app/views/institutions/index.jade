@@ -3,57 +3,36 @@ extends ../layout
 block content
   #content.container
     #institutions
-      .list
-        ul Prehistory
-          li Circles
-          li Hierarcy
-          li Shamanism
-          li Rite and Ritual
-        ul Civilization
-          li Domestication
-          li Warrior Classes
-          li Political Privilege
-          li.active Organized Religion
-          li Monarchy
-          li The Law
-          li The Library  
+      include _list
       .card
-        .diagram
-          .diagram-left
-            i.icon-certificate
-            i.icon-arrow-down
-            i.icon-magic
-            i.icon-arrow-down
-            i.icon-group
-          .diagram-right
-            p GOD
-            p Priest Class
-            p Society      
+        include _diagram
         h2 Organized Religion
+        .stats-box
+          i.icon-cogs
         .rating-box.harm
           h6 HARM
           .inner-rating-box
-            .buttons
+            .buttons.harm
+              .button.active
+              .button.active
+              .button.active
               .button
-              .button
-              .button
-              .button
-            .rating-description Somewhat harmful
+            .rating-description Harmful
         .rating-box.help
           h6 HELP
           .inner-rating-box
             .buttons.help
-              .button
-              .button
+              .button.active
+              .button.active
               .button
               .button
             .rating-description Somewhat helpful
         .rating-box.strength
-          h6 STRENGTH
+          h6 RELEVANCE
           .inner-rating-box
             .buttons.strength
               .button
-              .button.selected
+              .button
               .button
               .button
               .button

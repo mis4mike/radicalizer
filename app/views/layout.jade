@@ -3,8 +3,12 @@ html(lang="en")
   head
     title= title
     link(rel="font" href="/fonts/abaddon.TTF")
-    link(rel="stylesheet" href="/stylesheets/radicalizer.css")   
+    link(rel="stylesheet" href="/stylesheets/radicalizer.css")  
+    link(rel="stylesheet" href="/stylesheets/sparkles.css") 
+    link(rel="stylesheet" href="/stylesheets/controls.css") 
     link(rel="stylesheet" href="/font-awesome/css/font-awesome.min.css")  
+    script(src="/jquery/jquery-2.0.3.js")
+    script(src="/scripts/controls.js")
 body
   #header
     #nav
@@ -13,6 +17,6 @@ body
         li The Game
         li The Pieces
         li Our Moves
-    h1 Radicalizer
+    h1.rainbow Radicalizer
   block content
   footer
