@@ -1,0 +1,218 @@
+.rating-box {
+  vertical-align: top;
+  display: inline-block;
+  max-width: 90px;
+  padding: 3px;
+  background: #e7e7e7;
+  color: #111;
+  border-radius: 3px 3px 12px 12px;
+  margin: 12px 20px 12px 0;
+
+  &.strength {
+    max-width: 110px;
+    vertical-align: top;
+  }
+
+  h6 {
+    margin: 3px;
+  }
+
+  .inner-rating-box {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px 3px 12px 12px;
+    padding: 2px;
+    background-color: #111;
+    color: #ccc;
+    
+    .buttons {
+
+      height: 22px;
+
+      .button {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        margin: 1px;
+        border: 2px solid #e7e7e7;
+        border-radius: 12px;
+        background-color: #666;
+        vertical-align: top;
+        cursor: pointer;
+
+        //Put a shine on it
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 9px;
+          height: 9px;
+          bottom: 5px;
+          left: 4px;
+          line-height: 4px;
+          border-radius: 5px;
+          position: relative;
+          background-color: #999;
+        }
+        
+        &:after { //original
+          content: "";
+          display: inline-block;
+          position: absolute;                  
+          width: 4px;
+          height: 4px;
+          line-height: 4px;
+          border-radius: 2px;
+          background-color: #fff;
+          margin-top: 2px;
+        }
+      }
+
+      &.harm .active {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        margin: 1px;
+        border: 2px solid #e7e7e7;
+        border-radius: 12px;      
+        background-color: #fa0002;
+        //Put a shine on it
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 9px;
+          height: 9px;
+          bottom: 5px;
+          left: 4px;
+          line-height: 4px;
+          border-radius: 5px;
+          position: relative;
+          background-color: #fb706d;
+        }
+        
+        &:after { //original
+          content: "";
+          display: inline-block;
+          position: absolute;                  
+          width: 4px;
+          height: 4px;
+          line-height: 4px;
+          border-radius: 2px;
+          background-color: #fff;
+          margin-top: 2px;
+        }
+      }
+
+      &.help .active {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        margin: 1px;
+        border: 2px solid #e7e7e7;
+        border-radius: 12px;
+        background-color: #292;
+      
+        //Put a shine on it
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 9px;
+          height: 9px;
+          bottom: 5px;
+          left: 4px;
+          line-height: 4px;
+          border-radius: 5px;
+          position: relative;
+          background-color: #02e323;
+        }
+      }
+
+      &.strength {
+        .button {
+          &:after {
+            display: none;
+          }
+          background-color: #fcedb4;
+          &:nth-child(1) {
+            background-color: #cbb482;
+            &:before {
+              content: "";
+              display: inline-block;
+              width: 14px;
+              height: 18px;
+              bottom: 2px;
+              left: 2px;
+              line-height: 4px;
+              border-radius: 8px;
+              position: relative;
+              background-color: #555;
+            }
+          }
+          &:nth-child(2) {
+            background-color: #f1d39d;
+            &:before {
+              content: "";
+              display: inline-block;
+              width: 12px;
+              height: 16px;
+              bottom: 1px;
+              left: 4px;
+              line-height: 4px;
+              border-radius: 6px;
+              position: relative;
+              background-color: #555;
+            }                  
+          }
+          &:nth-child(3) {
+            background-color: #f1d39d;
+            &:before {
+              content: "";
+              display: inline-block;
+              width: 9px;
+              height: 16px;
+              bottom: 1px;
+              left: 7px;
+              line-height: 4px;
+              border-radius: 0 8px 8px 0;
+              position: relative;
+              background-color: #555;
+            }                 
+          }
+          &:nth-child(4) {
+            background-color: #555;
+            border-color: #555;
+            &:before {
+              content: "";
+              display: inline-block;
+              width: 14px;
+              height: 18px;
+              bottom: 2px;
+              left: -2px;
+              line-height: 4px;
+              border-radius: 12px 8px 8px 12px;
+              position: relative;
+              background-color: #fcedb4;
+            }                  
+          }
+          &:nth-child(5) {
+            background-color: #fff9c9;
+            border-color: #fff9c9;                    
+            &:before {
+              content: "";
+              display: none;
+            }                  
+          }
+          &.selected {
+            vertical-align: top;
+            -moz-box-shadow: 0px 0px 2px 2px #f1d39d;
+            -webkit-box-shadow: 0px 0px 2px 2px #f1d39d;
+             box-shadow: 0px 0px 2px 2px  #f1d39d;
+          }                                    
+        }
+      }
+    }
+    .rating-description {
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+}
