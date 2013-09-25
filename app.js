@@ -17,7 +17,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.bodyParser());
 
 //For each controller/module, run the setup method. Setup initializes app routes
-['main', 'institutions'].map(function(controllerName) {
+['main', 'institutions', 'history'].map(function(controllerName) {
     var controller = require('./app/controllers/' + controllerName);
     controller.setup(app);
  });
