@@ -1,27 +1,49 @@
+@import "../bootstrap/mixins.less";
+
+@header-height: 68px;
+
+//Global settings
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+//Assets
 @font-face {
   font-family: abaddon;
   src: url('/fonts/abaddon.TTF');
 }
-
+//Main layout styles
 body {
   font-family: sans;
-  background-color: #111;
+  background-color: #000;
   color: #ccc;
 
   #header {
+    position: fixed;
+    top: 0;
+    height: @header-height;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    background-color: #333;
+    z-index: 1000;
+
+    .clearfix();
+
     h1 {
       display: inline-block;
       position: absolute;
-      right: 0px;
-      margin: 6px 65px 0 0;
-      padding: 6px;
+      right: 65px;
+      top: 0px;
+      margin-top: 2px;
       font-family: abaddon;
-      font-size: 49px;
+      font-size: 47px;
+    }
+    h4 {
+      display: inline-block;
+      position: absolute;
+      right: 65px;
+      top: 32px;
+
     }
     #nav {
       display: inline-block;
@@ -47,5 +69,13 @@ body {
   }
 
   #content {
+    margin-top: @header-height;
   }
+}
+//Less mixins
+.transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition: all @duration @ease;
 }

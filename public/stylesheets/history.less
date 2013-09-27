@@ -1,3 +1,5 @@
+@import 'radicalizer.less';
+
 .era {
   padding: 96px 48px 48px 48px;
   text-align: center;
@@ -8,12 +10,28 @@
     z-index: 40;
     pointer-events: none;
     font-size: 48px;
+    color: #00F;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;    
   }
   .era-dates {
     position: relative;
     z-index: 40;
     pointer-events: none;
-    font-size: 24px;
+    font-size: 36px;
+    color: #00F;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
   .era-stage {
     position: absolute;
@@ -42,6 +60,7 @@
         max-height: 100%;
         fill: #fff;
         stroke: #777;
+        .transition(.3s, ease-out);
       }
       &.underground {
         top: 100%;
