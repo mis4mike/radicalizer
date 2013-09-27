@@ -54,7 +54,7 @@
     .era-icon {
       position: absolute;
       cursor: pointer;
-      //max-height: 20%;
+      max-height: 30%;
 
       svg {
         max-height: 100%;
@@ -142,30 +142,37 @@
       &.layer-0 {
         bottom: 0%;
         z-index: 70;
+        max-height: 20%;
       }    
       &.layer-1 {
         bottom: 5%;
         z-index: 60;
+        max-height: 20%;
       } 
       &.layer-2 {
         bottom: 10%;
         z-index: 50;
+        max-height: 20%;
       }       
       &.layer-3 {
         bottom: 15%;
         z-index: 40;
+        max-height: 20%;
       }  
       &.layer-4 {
         bottom: 20%;
         z-index: 30;
+        max-height: 20%;
       }       
       &.layer-5 {
         bottom: 25%;
         z-index: 20;
+        max-height: 20%;
       }  
       &.layer-6 {
         bottom: 30%;
         z-index: 10;
+        max-height: 20%;
       }                        
     }
     &.active {
@@ -222,6 +229,9 @@
         max-height: 10% !important;
         margin-right: -2%;
       }
+      .cactus {
+        max-height: 10% !important;
+      }
     }
     &.social-unrest {
       .era-icon {
@@ -255,6 +265,8 @@
         }
       }
     }
+
+    /* OPEN ERA */
     &.sexual-liberation {
       margin-top: 15px;
       .era-icon {
@@ -313,8 +325,69 @@
       }
     }
     &.economic-resilience {
+      .wind-farm {
+        max-height: 30%;
+      }
       path, circle {
         fill: #fff;          
+      }
+    }
+
+    /* PRESENT MOMENT */
+    &.climate-change {
+      .era-icon {
+        max-height: 20%;
+      }
+    }
+    &.early-robot-warfare {
+      .drone {
+        max-height: 20%;
+      }
+    }
+    &.rapid-scientific-progress {
+      .era-icon {
+      }
+    }
+    &.civil-unrest {
+      .era-icon {
+        max-height: 20%;
+        &.police {
+          max-height: 15%;
+        }
+      }
+    }
+    &.global-capitalism {
+      .airplane {
+        top: 50%;
+        max-height: 6%;
+      }
+      .ship {
+        max-height: 8%;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+      }
+    }
+    &.consumerism {
+      .shopping {
+        max-height: 12% !important;
+      }
+    }
+    &.toxic-culture {
+      .television {
+        max-height: 20%;
+      }
+      .skull {
+        top: 17%;
+        max-height: 10%;
+      }
+    }
+    &.financial-coup {
+      .bank {
+        margin-left: -4%;
       }
     }
   }

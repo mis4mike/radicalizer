@@ -6,4 +6,5 @@ body #header h1{display:inline-block;position:absolute;right:65px;top:0px;margin
 body #header h4{display:inline-block;position:absolute;right:65px;top:32px}
 body #header #nav{display:inline-block;margin-top:12px}body #header #nav ul{list-style-type:none}body #header #nav ul li{display:inline-block;padding:10px;font-weight:bold}
 body #header #nav ul li a{text-decoration:none;color:#ccc}
+body lightbox{position:absolute;top:0;left:0;height:0px;width:100%;margin:6px;z-index:2000;background-color:#00FF00;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}
 body #content{margin-top:68px}

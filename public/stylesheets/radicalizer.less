@@ -67,7 +67,19 @@ body {
       }
     }    
   }
+  lightbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    margin: 6px;
+    z-index: 2000;
 
+    background-color: #00FF00;
+
+    .transition(.3s, ease-out);
+  }
   #content {
     margin-top: @header-height;
   }

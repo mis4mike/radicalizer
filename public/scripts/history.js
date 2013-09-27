@@ -4,4 +4,8 @@ $(document).on('ready', function () {
   }, function () {
     $(this).parents('.era-institution').removeClass('active');    
   });
+
+  $('.era-icon').on('click', function () {
+    $('#lightbox').css('height', '100%');
+  });
 });

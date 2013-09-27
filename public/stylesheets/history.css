@@ -6,11 +6,12 @@ body #header h1{display:inline-block;position:absolute;right:65px;top:0px;margin
 body #header h4{display:inline-block;position:absolute;right:65px;top:32px}
 body #header #nav{display:inline-block;margin-top:12px}body #header #nav ul{list-style-type:none}body #header #nav ul li{display:inline-block;padding:10px;font-weight:bold}
 body #header #nav ul li a{text-decoration:none;color:#ccc}
+body lightbox{position:absolute;top:0;left:0;height:0px;width:100%;margin:6px;z-index:2000;background-color:#00FF00;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}
 body #content{margin-top:68px}
 .era{padding:96px 48px 48px 48px;text-align:center;border-bottom:6px solid #ccc;font-weight:bold}.era .title{position:relative;z-index:40;pointer-events:none;font-size:48px;color:#00F;-webkit-text-stroke:1px #fff;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
 .era .era-dates{position:relative;z-index:40;pointer-events:none;font-size:36px;color:#00F;-webkit-text-stroke:1px #fff;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
 .era .era-stage{position:absolute;border-bottom:68px solid #777;border-left:75px solid transparent;border-right:75px solid transparent;height:0;width:95%;left:2.5%;bottom:6px;z-index:-50}
-.era .era-institution{position:absolute;width:100%;height:100%;top:0;left:0}.era .era-institution .era-icon{position:absolute;cursor:pointer}.era .era-institution .era-icon svg{max-height:100%;fill:#fff;stroke:#777;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}
+.era .era-institution{position:absolute;width:100%;height:100%;top:0;left:0;}.era .era-institution .era-icon{position:absolute;cursor:pointer;max-height:30%}.era .era-institution .era-icon svg{max-height:100%;fill:#fff;stroke:#777;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}
 .era .era-institution .era-icon.underground{top:100%}
 .era .era-institution .era-icon.right-0{right:0}
 .era .era-institution .era-icon.right-5{right:5%}
@@ -36,13 +37,13 @@ body #content{margin-top:68px}
 .era .era-institution .era-icon.left-50{left:50%}
 .era .era-institution .era-icon.sky{top:0%;z-index:50}
 .era .era-institution .era-icon.lower-sky{top:10%;z-index:50}
-.era .era-institution .era-icon.layer-0{bottom:0%;z-index:70}
-.era .era-institution .era-icon.layer-1{bottom:5%;z-index:60}
-.era .era-institution .era-icon.layer-2{bottom:10%;z-index:50}
-.era .era-institution .era-icon.layer-3{bottom:15%;z-index:40}
-.era .era-institution .era-icon.layer-4{bottom:20%;z-index:30}
-.era .era-institution .era-icon.layer-5{bottom:25%;z-index:20}
-.era .era-institution .era-icon.layer-6{bottom:30%;z-index:10}
+.era .era-institution .era-icon.layer-0{bottom:0%;z-index:70;max-height:20%}
+.era .era-institution .era-icon.layer-1{bottom:5%;z-index:60;max-height:20%}
+.era .era-institution .era-icon.layer-2{bottom:10%;z-index:50;max-height:20%}
+.era .era-institution .era-icon.layer-3{bottom:15%;z-index:40;max-height:20%}
+.era .era-institution .era-icon.layer-4{bottom:20%;z-index:30;max-height:20%}
+.era .era-institution .era-icon.layer-5{bottom:25%;z-index:20;max-height:20%}
+.era .era-institution .era-icon.layer-6{bottom:30%;z-index:10;max-height:20%}
 .era .era-institution.active .era-icon svg{fill:#f99 !important}.era .era-institution.active .era-icon svg circle,.era .era-institution.active .era-icon svg path{fill:#f99 !important}
 .era .era-institution.robot-warfare .era-icon{max-height:35%}
 .era .era-institution.police-state .era-icon{max-height:15%}
@@ -52,6 +53,7 @@ body #content{margin-top:68px}
 .era .era-institution.economic-decay .era-icon.trash{max-height:7% !important;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
 .era .era-institution.ecocide .era-icon{max-height:20% !important}
 .era .era-institution.ecocide .biofuel{max-height:10% !important;margin-right:-2%}
+.era .era-institution.ecocide .cactus{max-height:10% !important}
 .era .era-institution.social-unrest .era-icon{max-height:20%}.era .era-institution.social-unrest .era-icon svg{-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}
 .era .era-institution.social-unrest .era-icon.gasmask{max-height:12.5%;margin-right:-2%}
 .era .era-institution.social-unrest .era-icon.riot-police{max-height:15%}
@@ -65,4 +67,14 @@ body #content{margin-top:68px}
 .era .era-institution.peace .era-icon{max-height:15%}
 .era .era-institution.ecological-restoration .tree{max-height:15%}.era .era-institution.ecological-restoration .tree svg{fill:#339933 !important}
 .era .era-institution.ecological-restoration .tree2{max-height:30%}.era .era-institution.ecological-restoration .tree2 svg{fill:#339933 !important}
+.era .era-institution.economic-resilience .wind-farm{max-height:30%}
 .era .era-institution.economic-resilience path,.era .era-institution.economic-resilience circle{fill:#fff}
+.era .era-institution.climate-change .era-icon{max-height:20%}
+.era .era-institution.early-robot-warfare .drone{max-height:20%}
+.era .era-institution.civil-unrest .era-icon{max-height:20%}.era .era-institution.civil-unrest .era-icon.police{max-height:15%}
+.era .era-institution.global-capitalism .airplane{top:50%;max-height:6%}
+.era .era-institution.global-capitalism .ship{max-height:8%;-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}
+.era .era-institution.consumerism .shopping{max-height:12% !important}
+.era .era-institution.toxic-culture .television{max-height:20%}
+.era .era-institution.toxic-culture .skull{top:17%;max-height:10%}
+.era .era-institution.financial-coup .bank{margin-left:-4%}
