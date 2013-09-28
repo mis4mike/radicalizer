@@ -1,6 +1,6 @@
 @import "../bootstrap/mixins.less";
 
-@header-height: 68px;
+@header-height: 64px;
 
 //Global settings
 * {
@@ -24,7 +24,7 @@ body {
     height: @header-height;
     width: 100%;
     border-bottom: 2px solid #fff;
-    background-color: #333;
+    background-color: #444;
     z-index: 1000;
 
     .clearfix();
@@ -67,18 +67,33 @@ body {
       }
     }    
   }
-  lightbox {
-    position: absolute;
+  #lightbox {
+    position: fixed;
     top: 0;
     left: 0;
-    height: 0px;
-    width: 100%;
-    margin: 6px;
+    right: 0;
+    bottom: 100%;
+    margin: 24px;
     z-index: 2000;
+    overflow: hidden;
 
-    background-color: #00FF00;
 
-    .transition(.3s, ease-out);
+    background-color: #444;
+    
+    .transition(.5s, ease-out);
+    #lightbox-title {
+      display: inline-block;
+    }
+    .close {
+      margin: 12px;
+      float: right;
+      color: #fff;
+    }
+    &.active {
+      bottom: 0;
+      border: 2px solid #fff;
+      border-radius: 12px;
+    }
   }
   #content {
     margin-top: @header-height;

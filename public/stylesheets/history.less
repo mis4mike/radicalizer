@@ -1,10 +1,27 @@
 @import 'radicalizer.less';
 
 .era {
-  padding: 96px 48px 48px 48px;
+  padding: 36px 48px 48px 48px;
   text-align: center;
   border-bottom: 6px solid #ccc;
   font-weight: bold;
+
+  .institution-name {
+    position: relative;
+    height: 60px;
+    margin: 0 16%;
+    z-index: 100;
+    pointer-events: none;
+    font-size: 28px;
+    color: #0a0;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;     
+  }
   .title {    
     position: relative;
     z-index: 40;
@@ -231,6 +248,9 @@
       }
       .cactus {
         max-height: 10% !important;
+        svg {
+          fill: #339933 !important;
+        }
       }
     }
     &.social-unrest {
@@ -301,9 +321,6 @@
       .coworking {
         max-height: 20%;
       }  
-      .garden {
-        max-height: 15%;
-      }  
     }
     &.peace {
       .era-icon {
@@ -325,6 +342,9 @@
       }
     }
     &.economic-resilience {
+      .garden {
+        max-height: 15%;
+      }      
       .wind-farm {
         max-height: 30%;
       }
@@ -388,6 +408,11 @@
     &.financial-coup {
       .bank {
         margin-left: -4%;
+      }
+    }
+    &.wage-slavery {
+      .era-icon {
+        max-height: 12.5%;
       }
     }
   }

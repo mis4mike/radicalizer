@@ -1,20 +1,21 @@
 .era 
   .title Total State
   .era-dates 20XX - ?
+  .institution-name
   .era-stage
-  .era-institution.robot-warfare(title='Robotic Warfare')
+  .era-institution.robot-warfare(data-name='Robotic Warfare')
     .era-icon.sky.right-15
       include ../svg/drone1.svg
     .era-icon.sky.left-15
       include ../svg/drone2.svg    
-  .era-institution.police-state(title='Police State')
+  .era-institution.police-state(data-name='Police State')
     .era-icon.layer-2.left-5
       include ../svg/registration.svg
     .era-icon.layer-1.left-10
       include ../svg/search.svg
     .era-icon.layer-2.left-20
       include ../svg/detain.svg
-  .era-institution.economic-decay(title='Economic Decay')
+  .era-institution.economic-decay(data-name='Economic Decay')
     .era-icon.layer-1.right-30.hidden-md.hidden-sm
       include ../svg/ruins.svg
     .era-icon.layer-2.right-25.hidden-md.hidden-sm
@@ -33,7 +34,7 @@
       include ../svg/graves.svg   
     .era-icon.layer-1.right-15.trash
       include ../svg/trash.svg
-  .era-institution.ecocide(title='Severe Ecocide')
+  .era-institution.ecocide(data-name='Severe Ecocide')
     .era-icon.layer-5.right-10
       include ../svg/factory.svg      
     .era-icon.layer-5.right-20
@@ -47,8 +48,10 @@
     .era-icon.layer-3.right-35.cactus
       include ../svg/cactus.svg
     .era-icon.layer-3.right-25.cactus
-      include ../svg/cactus.svg            
-  .era-institution.social-unrest(title='Uprising and Repression')
+      include ../svg/cactus.svg        
+    .era-icon.layer-4.left-25.tree
+      include ../svg/dead_tree.svg    
+  .era-institution.social-unrest(data-name='Uprising and Repression')
     .era-icon.layer-1.right-40.riot
       include ../svg/riot.svg
     .era-icon.layer-2.right-35.gasmask
@@ -57,7 +60,7 @@
       include ../svg/riot_police.svg
     .era-icon.layer-1.left-30.riot-police.hidden-md.hidden-sm
       include ../svg/riot_police.svg
-  .era-institution.stratification(title='Hyper Stratification')
+  .era-institution.stratification(data-name='Hyper Stratification')
     .era-icon.layer-4.left-10.city
       include ../svg/city.svg
     .era-icon.layer-5.left-20.government
