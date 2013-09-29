@@ -1,6 +1,6 @@
 
 *{-moz-box-sizing:border-box;box-sizing:border-box}
-@font-face{font-family:abaddon;src:url('/fonts/abaddon.TTF')}body{font-family:sans;background-color:#000;color:#ccc}body #header{position:fixed;top:0;height:64px;width:100%;border-bottom:2px solid #fff;background-color:#444;z-index:1000}body #header:before,body #header:after{content:" ";display:table;}
+@font-face{font-family:abaddon;src:url('/fonts/abaddon.TTF')}body{font-family:Arial, calibri, sans;background-color:#000;color:#ccc}body #header{position:fixed;top:0;height:64px;width:100%;border-bottom:2px solid #fff;background-color:#444;z-index:1000}body #header:before,body #header:after{content:" ";display:table;}
 body #header:after{clear:both}
 body #header h1{display:inline-block;position:absolute;right:65px;top:0px;margin-top:2px;font-family:abaddon;font-size:47px}
 body #header h4{display:inline-block;position:absolute;right:65px;top:32px}
@@ -10,9 +10,8 @@ body #lightbox{position:fixed;top:0;left:0;right:0;bottom:100%;margin:24px;z-ind
 body #lightbox .close{margin:12px;float:right;color:#fff}
 body #lightbox.active{bottom:0;border:2px solid #fff;border-radius:12px}
 body #content{margin-top:64px}
-.era{padding:36px 48px 48px 48px;text-align:center;border-bottom:6px solid #ccc;font-weight:bold}.era .institution-name{position:relative;height:60px;margin:0 16%;z-index:100;pointer-events:none;font-size:28px;color:#0a0;-webkit-text-stroke:1px #fff;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
-.era .title{position:relative;z-index:40;pointer-events:none;font-size:48px;color:#00F;-webkit-text-stroke:1px #fff;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
-.era .era-dates{position:relative;z-index:40;pointer-events:none;font-size:36px;color:#00F;-webkit-text-stroke:1px #fff;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
+.era{padding:36px 48px 80px 48px;text-align:center;border-bottom:6px solid #ccc;font-weight:bold}.era .title{position:relative;z-index:40;pointer-events:none;font-size:48px;color:#97f;-webkit-text-stroke:1px #555;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
+.era .era-dates{position:relative;z-index:40;pointer-events:none;font-size:30px;color:#97f;-webkit-text-stroke:1px #555;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
 .era .era-stage{position:absolute;border-bottom:68px solid #777;border-left:75px solid transparent;border-right:75px solid transparent;height:0;width:95%;left:2.5%;bottom:6px;z-index:-50}
 .era .era-institution{position:absolute;width:100%;height:100%;top:0;left:0;}.era .era-institution .era-icon{position:absolute;cursor:pointer;max-height:30%}.era .era-institution .era-icon svg{max-height:100%;fill:#fff;stroke:#777;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}
 .era .era-institution .era-icon.underground{top:100%}
@@ -47,7 +46,7 @@ body #content{margin-top:64px}
 .era .era-institution .era-icon.layer-4{bottom:20%;z-index:30;max-height:20%}
 .era .era-institution .era-icon.layer-5{bottom:25%;z-index:20;max-height:20%}
 .era .era-institution .era-icon.layer-6{bottom:30%;z-index:10;max-height:20%}
-.era .era-institution.active .era-icon svg{fill:#f99 !important}.era .era-institution.active .era-icon svg circle,.era .era-institution.active .era-icon svg path{fill:#f99 !important}
+.era .era-institution.active .era-icon svg{}.era .era-institution.active .era-icon svg circle,.era .era-institution.active .era-icon svg path{}
 .era .era-institution.robot-warfare .era-icon{max-height:35%}
 .era .era-institution.police-state .era-icon{max-height:15%}
 .era .era-institution.police-state .era-icon.layer-3{max-height:12.5% !important}
@@ -56,7 +55,7 @@ body #content{margin-top:64px}
 .era .era-institution.economic-decay .era-icon.trash{max-height:7% !important;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
 .era .era-institution.ecocide .era-icon{max-height:20% !important}
 .era .era-institution.ecocide .biofuel{max-height:10% !important;margin-right:-2%}
-.era .era-institution.ecocide .cactus{max-height:10% !important}.era .era-institution.ecocide .cactus svg{fill:#339933 !important}
+.era .era-institution.ecocide .cactus{max-height:10% !important}
 .era .era-institution.social-unrest .era-icon{max-height:20%}.era .era-institution.social-unrest .era-icon svg{-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}
 .era .era-institution.social-unrest .era-icon.gasmask{max-height:12.5%;margin-right:-2%}
 .era .era-institution.social-unrest .era-icon.riot-police{max-height:15%}
@@ -67,11 +66,13 @@ body #content{margin-top:64px}
 .era .era-institution.sexual-liberation .era-icon.unicorn{margin-left:-11px;margin-top:-7px}.era .era-institution.sexual-liberation .era-icon.unicorn svg{fill:#CC33FF !important;-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}
 .era .era-institution.open-source .coworking{max-height:20%}
 .era .era-institution.peace .era-icon{max-height:15%}
-.era .era-institution.ecological-restoration .tree{max-height:15%}.era .era-institution.ecological-restoration .tree svg{fill:#339933 !important}
-.era .era-institution.ecological-restoration .tree2{max-height:30%}.era .era-institution.ecological-restoration .tree2 svg{fill:#339933 !important}
+.era .era-institution.ecological-restoration .tree{max-height:15%}
+.era .era-institution.ecological-restoration .tree2{max-height:30%}
+.era .era-institution.ecological-restoration.active svg{fill:#339933 !important}
 .era .era-institution.economic-resilience .garden{max-height:15%}
 .era .era-institution.economic-resilience .wind-farm{max-height:30%}
 .era .era-institution.economic-resilience path,.era .era-institution.economic-resilience circle{fill:#fff}
+.era .era-institution.economic-resilience.active svg{fill:#339933 !important}
 .era .era-institution.climate-change .era-icon{max-height:20%}
 .era .era-institution.early-robot-warfare .drone{max-height:20%}
 .era .era-institution.civil-unrest .era-icon{max-height:20%}.era .era-institution.civil-unrest .era-icon.police{max-height:15%}
@@ -82,3 +83,4 @@ body #content{margin-top:64px}
 .era .era-institution.toxic-culture .skull{top:17%;max-height:10%}
 .era .era-institution.financial-coup .bank{margin-left:-4%}
 .era .era-institution.wage-slavery .era-icon{max-height:12.5%}
+.institution-name{position:relative;height:60px;width:100%;z-index:100;pointer-events:none;text-align:center;font-size:30px;color:##FFCC00;-webkit-text-stroke:2px #FFCC00;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
