@@ -1,9 +1,9 @@
-#institutions .list{display:inline-block}#institutions .list ul{list-style-type:none;font-weight:bold;text-transform:uppercase}#institutions .list ul li{font-weight:normal;text-transform:none}
-#institutions .card{width:610px;height:600px;display:inline-block;vertical-align:top;margin:0px 24px;border:4px solid #e7e7e7;border-radius:12px;padding:24px}#institutions .card h2{margin:0}
-#institutions .card .diagram{float:right;height:200px;width:200px;border:3px solid #e7e7e7;border-radius:12px}#institutions .card .diagram i{font-size:30px}
-#institutions .card .diagram i.icon-arrow-down{display:block;margin:5px;font-size:12px}
-#institutions .card .diagram i.icon-certificate{color:#fff9c9}
-#institutions .card .diagram i.icon-magic{color:#58d3d3}
-#institutions .card .diagram i.icon-male,#institutions .card .diagram i.icon-female,#institutions .card .diagram i.icon-group{color:#e8c158}
-#institutions .card .diagram .diagram-left{display:inline-block;width:22%;margin:10%;text-align:center}
-#institutions .card .diagram .diagram-right{display:inline-block;vertical-align:top;width:35%;margin:10%;font-weight:bold}#institutions .card .diagram .diagram-right p{margin:0px 0 18px 0}
+#lightbox h2{margin:0}
+#lightbox .ratings{display:inline-block}
+#lightbox .diagram{display:inline-block;vertical-align:top;height:216px;width:216px;border:3px solid #e7e7e7;border-radius:12px;background-color:#111}#lightbox .diagram i{font-size:30px}
+#lightbox .diagram i.icon-arrow-down{display:block;margin:5px;font-size:12px}
+#lightbox .diagram i.icon-certificate{color:#fff9c9}
+#lightbox .diagram i.icon-magic{color:#58d3d3}
+#lightbox .diagram i.icon-male,#lightbox .diagram i.icon-female,#lightbox .diagram i.icon-group{color:#e8c158}
+#lightbox .diagram .diagram-left{display:inline-block;width:22%;margin:10%;text-align:center}
+#lightbox .diagram .diagram-right{display:inline-block;vertical-align:top;width:35%;margin:10%;font-weight:bold}#lightbox .diagram .diagram-right p{margin:0px 0 18px 0}

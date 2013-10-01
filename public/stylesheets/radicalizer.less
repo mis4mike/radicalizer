@@ -26,14 +26,14 @@ body {
     border-bottom: 2px solid #fff;
     z-index: 1000;
 
-  background: #111111; /* Old browsers */
-  background: -moz-linear-gradient(top, #111111 0%, #3a3a3a 7%, #515151 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#111111), color-stop(7%,#3a3a3a), color-stop(100%,#515151)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #111111 0%,#3a3a3a 7%,#515151 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #111111 0%,#3a3a3a 7%,#515151 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #111111 0%,#3a3a3a 7%,#515151 100%); /* IE10+ */
-  background: linear-gradient(to bottom, #111111 0%,#3a3a3a 7%,#515151 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#515151',GradientType=0 ); /* IE6-9 */
+    background: #111111; /* Old browsers */
+    background: -moz-linear-gradient(top, #111111 0%, #3a3a3a 7%, #515151 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#111111), color-stop(7%,#3a3a3a), color-stop(100%,#515151)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #111111 0%,#3a3a3a 7%,#515151 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #111111 0%,#3a3a3a 7%,#515151 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #111111 0%,#3a3a3a 7%,#515151 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #111111 0%,#3a3a3a 7%,#515151 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#515151',GradientType=0 ); /* IE6-9 */
 
     .clearfix();
 
@@ -84,27 +84,78 @@ body {
     margin: 24px;
     z-index: 2000;
     overflow: hidden;
-
-
+    height: 0px;
     background-color: #444;
-    
     .transition(.5s, ease-out);
-    #lightbox-title {
+
+    #lightbox-left {
       display: inline-block;
+      width: 187px;
+      overflow-y: auto;
+      margin: 24px 0;
+      border: 2px solid #fff;
+      border-right: 0;
+      border-radius: 12px 0 0 12px;      
+      padding: 12px 24px 12px 12px;
+      background: #111;
+      ul {
+        list-style-type: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-left: 0;
+
+        li {
+          font-weight: normal;
+          text-transform: none;
+        }
+      }
+    }
+    #lightbox-right {
+      display: inline-block;
+      float: right;
+      max-width: 83%;
+      border: 2px solid #fff;
+      border-radius: 12px;
+      padding: 24px;
+      vertical-align: top;
+      overflow-y: auto;
+      #lightbox-header {
+        height: 42px;
+        #lightbox-title {
+          display: inline-block;
+          margin-top: 0;
+        }
+      }
+      .timeline {
+        display: inline-block;
+        width: 535px;
+        height: 192px;
+        background: #e7e7e7;
+        margin-top: 12px;
+        border: 2px solid #fff;
+        border-radius: 6px 0 0 6px;
+
+        .inner-timeline {
+          height: 100%;
+          width: 100%;
+          background: #111;
+          border-radius: 6px 0 0 6px;
+        }
+      }
     }
     .close {
-      margin: 12px;
       float: right;
       color: #fff;
     }
     &.active {
+      height: auto;
       bottom: 0;
       border: 2px solid #fff;
       border-radius: 12px;
-    }
+      padding: 24px;
+    }    
   }
-  #content {
-    margin-top: @header-height;
+  #lightbox-content {
   }
 }
 //Less mixins
