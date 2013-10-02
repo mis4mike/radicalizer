@@ -1,9 +1,15 @@
 #lightbox h2{margin:0}
 #lightbox .ratings{display:inline-block}
-#lightbox .diagram{display:inline-block;vertical-align:top;height:216px;width:216px;border:3px solid #e7e7e7;border-radius:12px;background-color:#111}#lightbox .diagram i{font-size:30px}
+#lightbox #lightbox-left{display:inline-block;width:17%;overflow-y:auto;margin:24px 0;border:2px solid #fff;border-right:0;border-radius:12px 0 0 12px;padding:12px 24px 12px 12px;background:#111}#lightbox #lightbox-left ul{list-style-type:none;font-weight:bold;text-transform:uppercase;padding-left:0}#lightbox #lightbox-left ul li{font-weight:normal;text-transform:none}
+#lightbox #lightbox-right{display:inline-block;float:right;max-width:83%;border:2px solid #fff;border-radius:12px;padding:24px;vertical-align:top;overflow-y:auto;background-color:#444}#lightbox #lightbox-right #lightbox-header{height:42px}#lightbox #lightbox-right #lightbox-header #lightbox-title{display:inline-block;margin-top:0}
+#lightbox #lightbox-right .timeline{display:inline-block;width:62%;height:192px;background:#e7e7e7;margin-top:12px;border:2px solid #fff;border-radius:6px 0 0 6px}#lightbox #lightbox-right .timeline .inner-timeline{height:100%;width:100%;background:#111;border-radius:6px 0 0 6px}
+#lightbox #lightbox-right .action-box{margin-bottom:12px}#lightbox #lightbox-right .action-box .btn-lg{display:inline-block;margin-right:24px;font-size:24px;font-weight:bold}
+#lightbox .diagram{display:inline-block;vertical-align:top;height:216px;width:25%;border:3px solid #e7e7e7;border-radius:12px;background-color:#111}#lightbox .diagram i{font-size:30px}
 #lightbox .diagram i.icon-arrow-down{display:block;margin:5px;font-size:12px}
 #lightbox .diagram i.icon-certificate{color:#fff9c9}
 #lightbox .diagram i.icon-magic{color:#58d3d3}
 #lightbox .diagram i.icon-male,#lightbox .diagram i.icon-female,#lightbox .diagram i.icon-group{color:#e8c158}
 #lightbox .diagram .diagram-left{display:inline-block;width:22%;margin:10%;text-align:center}
 #lightbox .diagram .diagram-right{display:inline-block;vertical-align:top;width:35%;margin:10%;font-weight:bold}#lightbox .diagram .diagram-right p{margin:0px 0 18px 0}
+#create-institution{margin-top:100px}#create-institution input{display:block}
+#create-institution textbox{display:block}

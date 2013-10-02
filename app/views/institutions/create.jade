@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+  form#create-institution(action='/institutions/create/submit/')
+    input(name='name')
+    textbox(name='description')
+    button(type='submit') GO!

@@ -75,6 +75,9 @@ body {
       }
     }    
   }
+  #content {
+    margin-top: @header-height;
+  }
   #lightbox {
     position: fixed;
     top: 64px;
@@ -106,70 +109,6 @@ body {
       float: right;
       color: #fff;
     }
-    #lightbox-left {
-      display: inline-block;
-      width: 187px;
-      overflow-y: auto;
-      margin: 24px 0;
-      border: 2px solid #fff;
-      border-right: 0;
-      border-radius: 12px 0 0 12px;      
-      padding: 12px 24px 12px 12px;
-      background: #111;
-      ul {
-        list-style-type: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding-left: 0;
-
-        li {
-          font-weight: normal;
-          text-transform: none;
-        }
-      }
-    }
-    #lightbox-right {
-      display: inline-block;
-      float: right;
-      max-width: 83%;
-      border: 2px solid #fff;
-      border-radius: 12px;
-      padding: 24px;
-      vertical-align: top;
-      overflow-y: auto;
-      #lightbox-header {
-        height: 42px;
-        #lightbox-title {
-          display: inline-block;
-          margin-top: 0;
-        }
-      }
-      .timeline {
-        display: inline-block;
-        width: 535px;
-        height: 192px;
-        background: #e7e7e7;
-        margin-top: 12px;
-        border: 2px solid #fff;
-        border-radius: 6px 0 0 6px;
-
-        .inner-timeline {
-          height: 100%;
-          width: 100%;
-          background: #111;
-          border-radius: 6px 0 0 6px;
-        }
-      }
-      .action-box {
-        margin-bottom: 12px;
-        .btn-lg {
-          display: inline-block;
-          margin-right: 24px;
-          font-size: 24px;
-          font-weight: bold;
-        }
-      }
-    }  
   }
   #lightbox-content {
   }

@@ -3,14 +3,16 @@ extends ../layout
 block content
   #content.container
     .row
-      .col-md-6
+      .col-md-8.col-md-offset-2
         include _open_era.jade
-      .col-md-6
+    .row
+      .col-md-8.col-md-offset-2
+        .institution-name.open-era
+    .row        
+      .col-md-8.col-md-offset-2
         include _total_state.jade
     .row
-      .col-md-6
-        .institution-name.open-era
-      .col-md-6
+      .col-md-8.col-md-offset-2
         .institution-name.total-state
     .row
       .col-md-8.col-md-offset-2

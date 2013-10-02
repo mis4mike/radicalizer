@@ -16,6 +16,9 @@ app.use(lessMiddleware({
 app.use(express.static(__dirname + '/public'));
 app.use(express.bodyParser());
 
+//Load the models: institutions
+radicalizer = require('./radicalizer.js');
+
 //For each controller/module, run the setup method. Setup initializes app routes
 ['main', 'institutions', 'history'].map(function(controllerName) {
     var controller = require('./app/controllers/' + controllerName);
