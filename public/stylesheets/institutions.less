@@ -1,3 +1,5 @@
+@import './sparkles.less';
+
 #lightbox {
   h2 {
     margin: 0;
@@ -44,22 +46,7 @@
         margin-top: 0;
       }
     }
-    .timeline {
-      display: inline-block;
-      width: 62%;
-      height: 192px;
-      background: #e7e7e7;
-      margin-top: 12px;
-      border: 2px solid #fff;
-      border-radius: 6px 0 0 6px;
 
-      .inner-timeline {
-        height: 100%;
-        width: 100%;
-        background: #111;
-        border-radius: 6px 0 0 6px;
-      }
-    }
     .action-box {
       margin-bottom: 12px;
       .btn-lg {
@@ -70,6 +57,41 @@
       }
     }
   }  
+  .timeline {
+    display: inline-block;
+    width: 62%;
+    height: 192px;
+    background: #e7e7e7;
+    margin-top: 12px;
+    border: 2px solid #fff;
+    border-radius: 6px 0 0 6px;
+
+    .inner-timeline {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background: #111;
+      border-radius: 6px 0 0 6px;
+      .eras {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .era {
+          vertical-align: top;
+          display: inline-block;
+          width: 25%;
+          height: 100%;
+          border: 0;
+          border-right: 1px solid #ccc;
+          padding: 15px 0 0 0;
+          color: #444;
+          font-size: 24px;
+          line-height: 30px;
+
+        }
+      }
+    }
+  }
   .diagram {
     display: inline-block;
     vertical-align: top;
@@ -119,11 +141,114 @@
 }
 
 #create-institution {
-  margin-top: 100px;
+  .left {
+    width: 62%;
+    display: inline-block;
+  }
+  .right {
+    vertical-align: top;
+    width: 37%;
+    display: inline-block;
+  }
   input {
     display: block;
+    width: 100%;
+    min-height: 50px;
+    background: inherit;
+    margin: 10px 0 0 0;
+    border: 2px solid #e7e7e7;
+    border-right: 0;
+    border-radius: 6px 0 0 6px;
+    padding: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;    
+    &:hover {
+      background: #555;
+    } 
   }
-  textbox {
+  textarea {
     display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 200px;
+    background: inherit;
+    margin: 10px 0 0 0;
+    border: 2px solid #e7e7e7;
+    border-right: 0;
+    border-radius: 6px 0 0 6px;
+    padding: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    &:hover {
+      background: #555;
+    } 
+  }
+  .hidden-controls {
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+  }
+  .timeline {
+    height: 100px;
+    width: 100%;
+    border-right: 0;
+  }
+  button {
+    display: block;
+    width: 50%;
+    min-height: 20px;
+    background: inherit;
+    margin: 10px 0 10px 6%;
+    border: 2px solid #e7e7e7;
+    border-radius: 6px 6px 6px 6px;
+    padding: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;   
+
+    &:hover {
+      background: #555;
+    }
+  }
+  .diagram {
+    width: 100%;
+    min-height: 406px;
+  }
+  .start-eras {
+
+
+  }
+  .eras {
+    position: relative;
+    height: 100% !important;
+    .era {
+      padding: 0 !important;
+      .start-era {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        height: 25%;
+        width: 100%;
+        padding: 0 !important;
+        border: 0;
+        border-right: 1px solid #ccc;
+        font-size: 16px;
+        line-height: 24px;
+        color: #999;
+        .light-grey-gradient;
+
+        &.prehistory {
+          border-radius: 5px 0 0 0;
+        }
+      }
+      &.active {
+        color: #777 !important;
+        .start-era {
+          color: #333;
+        }
+      }  
+    }
   }
 }

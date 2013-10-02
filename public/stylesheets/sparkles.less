@@ -1,0 +1,80 @@
+.rainbow {
+  background-image:-webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+}
+.light-grey-gradient {
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(top, #1e5799 0%, #e7e7e7 0%, #e7e7e7 0%, #d8d8d8 95%, #545454 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#e7e7e7), color-stop(0%,#e7e7e7), color-stop(95%,#d8d8d8), color-stop(100%,#545454)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #1e5799 0%,#e7e7e7 0%,#e7e7e7 0%,#d8d8d8 95%,#545454 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #1e5799 0%,#e7e7e7 0%,#e7e7e7 0%,#d8d8d8 95%,#545454 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #1e5799 0%,#e7e7e7 0%,#e7e7e7 0%,#d8d8d8 95%,#545454 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #1e5799 0%,#e7e7e7 0%,#e7e7e7 0%,#d8d8d8 95%,#545454 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#545454',GradientType=0 ); /* IE6-9 */
+}
+.dark-grey-gradient {
+  background: #111111; /* Old browsers */
+  background: -moz-linear-gradient(top, #111111 0%, #3a3a3a 7%, #515151 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#111111), color-stop(7%,#3a3a3a), color-stop(100%,#515151)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #111111 0%,#3a3a3a 7%,#515151 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #111111 0%,#3a3a3a 7%,#515151 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #111111 0%,#3a3a3a 7%,#515151 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #111111 0%,#3a3a3a 7%,#515151 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#515151',GradientType=0 ); /* IE6-9 */
+}
+.attention {
+  .red-glow-on;
+}
+.red-glow-on,
+.red-glow:hover {
+  border-color: rgba(204, 0, 0, 0.8) !important;
+  outline: 0;
+  outline: thin dotted \9;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(204, 0, 0, 0.6) !important;
+}
+.light-blue-glow-on,
+.light-blue-glow:hover {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+  border-color: rgba(82, 168, 236, 0.6) !important;
+  outline: 0;
+  outline: thin dotted \9;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6) !important;
+}
+.white-glow-on,
+.white-glow:hover {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+  outline: 0;
+  outline: thin dotted \9;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.075), 0px 0px 8px 2px rgba(255, 255, 255, 1) !important;
+}
+
+.blue-glow-on,
+.blue-glow:hover {
+  @include transition(all 0.2s ease-out);
+
+  border-color: rgba(0, 0, 190, 0.6) !important;
+  outline: 0;
+  outline: thin dotted \9;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 190, 0.6) !important;
+}
+
+.yellow-glow-on,
+.yellow-glow:hover {
+  @include transition(all 0.2s ease-out);
+
+  border-color: rgba(255, 198, 24, 0.6) !important;
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 198, 24, 0.6) !important;
+}

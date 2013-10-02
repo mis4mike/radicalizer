@@ -1,7 +1,69 @@
 extends ../layout
 
 block content
-  form#create-institution(action='/institutions/create/submit/')
-    input(name='name')
-    textbox(name='description')
-    button(type='submit') GO!
+  #content.container
+    #lightbox.active
+      form#create-institution(action='/institutions/create/submit/')
+        .left
+          input#institution-name(type='text' name='name' placeholder='Institution Name')
+          .hidden-controls
+            input(type='radio' name='startEra' value='prehistory')
+            |Prehistory
+            input(type='radio' name='startEra' value='ancient')
+            |Ancient Era
+            input(type='radio' name='startEra' value='postclassical')
+            |Postclassical Era
+            input(type='radio' name='startEra' value='modern')
+            |Modern Era  
+            input(type='radio' name='relevance[prehistory]' value='0') 
+            |Not Relevant
+            input(type='radio' name='relevance[prehistory]' value='1') 
+            |Somewhat Relevant
+            input(type='radio' name='relevance[prehistory]' value='2') 
+            |Definitely Relevant
+            input(type='radio' name='relevance[prehistory]' value='3') 
+            |Extremely Relevant
+            input(type='radio' name='relevance[ancient]' value='0') 
+            |Not Relevant
+            input(type='radio' name='relevance[ancient]' value='1') 
+            |Somewhat Relevant
+            input(type='radio' name='relevance[ancient]' value='2') 
+            |Definitely Relevant
+            input(type='radio' name='relevance[ancient]' value='3') 
+            |Extremely Relevant
+            input(type='radio' name='relevance[postclassical]' value='0') 
+            |Not Relevant
+            input(type='radio' name='relevance[postclassical]' value='1') 
+            |Somewhat Relevant
+            input(type='radio' name='relevance[postclassical]' value='2') 
+            |Definitely Relevant
+            input(type='radio' name='relevance[postclassical]' value='3') 
+            |Extremely Relevant
+            input(type='radio' name='relevance[modern]' value='0') 
+            |Not Relevant
+            input(type='radio' name='relevance[modern]' value='1') 
+            |Somewhat Relevant
+            input(type='radio' name='relevance[modern]' value='2') 
+            |Definitely Relevant
+            input(type='radio' name='relevance[modern]' value='3') 
+            |Extremely Relevant     
+            input(name='diagram' type='text')
+          .timeline       
+            .inner-timeline
+              .eras
+                .era.prehistory.active
+                  .start-era.prehistory X - 3500 BCE
+                  |Prehistory
+                .era.ancient.active
+                  .start-era.ancient 3500 BCE - 500 CE
+                  |Ancient History
+                .era.postclassical.active
+                  .start-era.postclassical 500 - 1500
+                  |Postclassical Era
+                .era.modern.active
+                 .start-era.modern 1500 - 20XX
+                 |Modern Era
+          textarea(name='description' placeholder='Explain the Institution Here')
+        .right
+          .diagram
+        button(type='submit') Create!

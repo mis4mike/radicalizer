@@ -18,6 +18,10 @@ app.use(express.bodyParser());
 
 //Load the models: institutions
 radicalizer = require('./radicalizer.js');
+//Load configs
+require('./config.js');
+
+app.locals.strings = 'test';
 
 //For each controller/module, run the setup method. Setup initializes app routes
 ['main', 'institutions', 'history'].map(function(controllerName) {

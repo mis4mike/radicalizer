@@ -10,6 +10,7 @@ var institutionSchema = Schema({
   relevance: [],
   ratings: [],
   description: String,
+  diagram: String,
   responses: [response]
 });
 
@@ -27,7 +28,12 @@ exports.getByName = function(name) {
   });
 }
 
-exports.createInstitution = function(name, type, startEra, relevance, description) {
+exports.createInstitution = function( name, 
+                                      type, 
+                                      startEra, 
+                                      relevance, 
+                                      diagram,
+                                      description) {
   var Institution = mongoose.model('Institution', institutionSchema);
 
   var newInstitution = new Institution ({ name: name,
@@ -36,6 +42,7 @@ exports.createInstitution = function(name, type, startEra, relevance, descriptio
                                           relevance: relevance,
                                           ratings: [],
                                           description: description, 
+                                          diagram: diagram,
                                           responses: [] });
 
   newInstitution.save(function (err) {if (err) console.log ('Error on save!')});

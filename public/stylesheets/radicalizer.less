@@ -1,4 +1,5 @@
-@import "../bootstrap/mixins.less";
+@import '../bootstrap/mixins.less';
+@import './sparkles.less';
 
 @header-height: 64px;
 
@@ -26,15 +27,7 @@ body {
     border-bottom: 2px solid #fff;
     z-index: 1000;
 
-    background: #111111; /* Old browsers */
-    background: -moz-linear-gradient(top, #111111 0%, #3a3a3a 7%, #515151 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#111111), color-stop(7%,#3a3a3a), color-stop(100%,#515151)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #111111 0%,#3a3a3a 7%,#515151 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #111111 0%,#3a3a3a 7%,#515151 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #111111 0%,#3a3a3a 7%,#515151 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #111111 0%,#3a3a3a 7%,#515151 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#515151',GradientType=0 ); /* IE6-9 */
-
+    .dark-grey-gradient;
     .clearfix();
 
     h1 {
@@ -87,15 +80,9 @@ body {
     margin: 24px;
     z-index: 2000;
     overflow: hidden;
+    overflow-y: auto;
     height: 0px;
-    background: #111111;
-    background: -moz-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #111), color-stop(7%, #3a3a3a), color-stop(100%, #515151));
-    background: -webkit-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);
-    background: -o-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);
-    background: -ms-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);
-    background: linear-gradient(to bottom, #111 0, #3a3a3a 7%, #515151 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111', endColorstr='#515151', GradientType=0);
+    .dark-grey-gradient;
     .transition(.5s, ease-out);
 
     &.active {
