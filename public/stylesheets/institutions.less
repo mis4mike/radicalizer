@@ -58,6 +58,7 @@
     }
   }  
   .timeline {
+    position: relative;
     display: inline-block;
     width: 62%;
     height: 192px;
@@ -91,6 +92,12 @@
         }
       }
     }
+    .timeline-graph {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }    
   }
   .diagram {
     display: inline-block;
@@ -216,21 +223,34 @@
     width: 100%;
     min-height: 406px;
   }
-  .start-eras {
-
-
-  }
   .eras {
     position: relative;
     height: 100% !important;
     .era {
+      position: relative;
       padding: 0 !important;
+      &.active {
+        color: #777 !important;
+        .start-era {
+          color: #333;
+        }
+        .ui-slider {
+          border-color: #ccc;
+          background-color: rgba(255,255,255,0.2);
+        }
+        .ui-slider-handle {
+          .red-glow-on;
+          background: #111;
+          background-color: rgba(255,0,0,0.5) !important;
+        }
+      }
       .start-era {
         position: relative;
         display: inline-block;
         vertical-align: top;
         height: 25%;
         width: 100%;
+        z-index: 50;
         padding: 0 !important;
         border: 0;
         border-right: 1px solid #ccc;
@@ -243,12 +263,26 @@
           border-radius: 5px 0 0 0;
         }
       }
-      &.active {
-        color: #777 !important;
-        .start-era {
-          color: #333;
+      .ui-slider {
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+        height: 70%;
+        width: 16px;
+        z-index: 50;
+        border-color: transparent;
+        background: transparent;
+
+        .ui-slider-range {
+          background: transparent;
         }
-      }  
+        .ui-slider-handle {
+          height: 10px;
+          margin: 0;
+          background: transparent;
+          border-color: transparent;
+        }
+      }
     }
   }
 }

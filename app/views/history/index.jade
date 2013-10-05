@@ -2,45 +2,71 @@ extends ../layout
 
 block content
   #content.container
-    .row
-      .col-md-8.col-md-offset-2
+    .row.open-era.era-container(style='display: none;')
+      .col-md-1.go-to-era(data-era='present')
+        p Back to the present
+        i.icon-long-arrow-left
+      .col-md-10
         include _open_era.jade
-    .row
-      .col-md-8.col-md-offset-2
         .institution-name.open-era
-    .row        
-      .col-md-8.col-md-offset-2
+      .col-md-1
+    .row.total-state.era-container(style='display: none;')
+      .col-md-1.go-to-era(data-era='present')
+        p Back to the present
+        i.icon-long-arrow-left
+      .col-md-10
         include _total_state.jade
-    .row
-      .col-md-8.col-md-offset-2
         .institution-name.total-state
-    .row
-      .col-md-8.col-md-offset-2
-        include _present_moment.jade
-    .row
-      .col-md-8.col-md-offset-2
+      .col-md-1
+    .row.present.era-container
+      .col-md-1.go-to-era(data-era='modern')
+        p Back to the modern era
+        i.icon-long-arrow-left
+      .col-md-10
+        include _present.jade
         .institution-name.present-moment
-    .row
-      .col-md-8.col-md-offset-2
+      .col-md-1
+        .go-to-era(data-era='open-era')
+          p On to the Open Era
+          i.icon-long-arrow-right
+        .go-to-era(data-era='total-state')
+          p On to the Total State
+          i.icon-long-arrow-right
+    .row.modern.era-container(style='display: none;')
+      .col-md-1.go-to-era(data-era='postclassical')
+        p Back to the postclassical era
+        i.icon-long-arrow-left
+      .col-md-10
         include _modern_era.jade
-    .row
-      .col-md-8.col-md-offset-2
         .institution-name.modern-era
-    .row
-      .col-md-8.col-md-offset-2
+      .col-md-1.go-to-era(data-era='present')
+        p On to the Present
+        i.icon-long-arrow-right
+    .row.postclassical.era-container(style='display: none;')
+      .col-md-1.go-to-era(data-era='ancient')
+        p Back to ancient times
+        i.icon-long-arrow-left
+      .col-md-10
         include _postclassical_era.jade
-    .row
-      .col-md-8.col-md-offset-2
         .institution-name.postclassical-era
-    .row
-      .col-md-8.col-md-offset-2
+      .col-md-1.go-to-era(data-era='modern')
+        p On to the Modern Era
+        i.icon-long-arrow-right
+    .row.ancient.era-container(style='display: none;')
+      .col-md-1.go-to-era(data-era='prehistoric')
+        p Back to prehistory
+        i.icon-long-arrow-left
+      .col-md-10
         include _ancient_history.jade
-    .row
-      .col-md-8.col-md-offset-2
         .institution-name.ancient-history        
-    .row
-      .col-md-8.col-md-offset-2
+      .col-md-1.go-to-era(data-era='postclassical')
+        p On to the postclassical era
+        i.icon-long-arrow-right
+    .row.prehistoric.era-container(style='display: none;')
+      .col-md-1
+      .col-md-10
         include _prehistoric_era.jade
-    .row
-      .col-md-8.col-md-offset-2
         .institution-name.prehistoric-era
+      .col-md-1.go-to-era(data-era='ancient')
+        p On to ancient history
+        i.icon-long-arrow-right

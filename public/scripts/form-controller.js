@@ -6,7 +6,7 @@ var formController = {
     }
   },
   createInstitutionSetup: function () {
-    $("#institution-name").on('click', function () {
+    $("#institution-name").on('blur', function () {
       $('.start-era').addClass('attention');
     });
     $('.start-era').on('click', function () {
@@ -14,6 +14,19 @@ var formController = {
       $(this).parent().addClass('active').nextAll().addClass('active');
       $('.start-era').removeClass('attention');
     });
+    $('.era-slider').slider({
+      orientation: 'vertical',
+      range: 'min',
+      min: 0,
+      max: 3,
+      value: 0,
+      slide: function( event, ui ) {
+        this.drawTimelineGraph();
+      }
+    });
+  },
+  drawTimelineGraph: function () {
+    var graph = $('.timeline-graph');
   }
 }
 
