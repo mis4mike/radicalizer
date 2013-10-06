@@ -1,10 +1,10 @@
 //small screen overrides
-@media(max-width: 640px){
+/*@media(max-width: 640px){
   .title {
     font-size: 48px !important;
   }
   
-}
+}*/
 //default coloring schemes for institution hovering
 .political {
   &.active {
@@ -47,22 +47,26 @@
   }   
 }
 .era-container {
+  position: relative;
   .col-md-1 {
+    p { 
+      //display: inline-block; 
+    }
   }
   .go-to-era {
     margin-top: 30px;
     cursor: pointer;
     font-size: 20px;
     color: #999;
-    &.hover {
-      color: #ccc;
-    }
     i {
-      font-size: 50px;
+      font-size: 65px;
     }
     p {
       max-width:100%;
       margin-bottom: 0;
+      &.hover {
+        color: #fff !important;
+      }
     }
   }  
 }
@@ -116,17 +120,17 @@
   .era-institution {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 375px;
     top: 0;
     left: 0;
 
     .era-icon {
       position: absolute;
       cursor: pointer;
-      max-height: 30%;
 
       svg {
-        max-height: 100%;
+        position: relative;
+        height: 100% !important;
         fill: #fff;
         stroke: #777;
         .transition(.3s, ease-out);
@@ -164,37 +168,30 @@
       &.layer-0 {
         bottom: 0%;
         z-index: 70;
-        max-height: 20%;
       }    
       &.layer-1 {
         bottom: 5%;
         z-index: 60;
-        max-height: 20%;
       } 
       &.layer-2 {
         bottom: 10%;
         z-index: 50;
-        max-height: 20%;
       }       
       &.layer-3 {
         bottom: 15%;
         z-index: 40;
-        max-height: 20%;
       }  
       &.layer-4 {
         bottom: 20%;
         z-index: 30;
-        max-height: 20%;
       }       
       &.layer-5 {
         bottom: 25%;
         z-index: 20;
-        max-height: 20%;
       }  
       &.layer-6 {
         bottom: 30%;
         z-index: 10;
-        max-height: 20%;
       }                        
     }
 /* specific institutions start here */
@@ -202,26 +199,19 @@
     &.robot-warfare {
       .conflict;
       .era-icon {
-        max-height: 35%;
+        height: 112px;
       }
     }
     &.police-state {
       .political;
       .era-icon {
-        max-height: 15%;
-        &.layer-1 {
-        } 
-        &.layer-2 {
-        }       
-        &.layer-3 {
-          max-height: 12.5% !important;
-        }  
+        height: 54px; 
       } 
     }
     &.economic-decay {
       .economic;
       .era-icon { 
-        max-height: 15% !important;
+        height: 60px;
         &.layer-2 {
           max-height: 12.5% !important;
         }       
@@ -237,7 +227,7 @@
     &.ecocide {
       .environmental;
       .era-icon { 
-        max-height: 20% !important;
+        height: 80px;
       }
       .biofuel {
         max-height: 10% !important;
@@ -250,21 +240,14 @@
     &.social-unrest {
       .conflict;
       .era-icon {
-        max-height: 20%;
-        svg {
-          -moz-transform: scaleX(-1);
-          -o-transform: scaleX(-1);
-          -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-          filter: FlipH;
-          -ms-filter: "FlipH";
-        }
+        height: 75px;
+        .flipped;
         &.gasmask {
-          max-height: 12.5%;
+          height: 50px;
           margin-right: -2%;
         }
         &.riot-police {
-          max-height: 15%;
+          height: 50px;
         }
       }
     }
@@ -273,11 +256,16 @@
       margin-top: -.5%;
       .era-icon {
         &.city {
-          max-height: 20%;
+          height: 75px;
+          margin-left: -20px;
         }
         &.government {
           margin-top: -3%;
-          max-height: 15%;
+          height: 75px;
+        }
+        &.bank {
+          margin-bottom: -9px;
+          height: 60px;
         }
       }
     }
@@ -287,87 +275,64 @@
       margin-top: 15px;
       .era-icon {
         &.making-out {
-          max-height: 25%;
-          svg {
-            height: 110%;
-            max-height: 110%;
-          }
+          height: 60px;
+        }
+        &.naked {
+          height: 60px;
         }
         &.male {
-          height: 16.5%;
+          height: 63px;
         }
         &.female {
-          height: 20%;
+          height: 75px;
           margin-top: 6px;
           margin-left: 8px;
         }
         &.unicorn {
           margin-left: -11px;
           margin-top: -14px;
-          svg {
-          /*  fill: #CC33FF !important; */
-
-            -moz-transform: scaleX(-1);
-            -o-transform: scaleX(-1);
-            -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-            filter: FlipH;
-            -ms-filter: "FlipH";
-          }
-        }
-        svg {
-          height: 100%;
+          .flipped;
         }
       }   
     }
     &.open-source {
       .economic;
-      .coworking {
-        max-height: 14%;
+      .era-icon {
+        height: 50px;
       }  
-      .sharing{
-        max-height: 14%;
-      }
     }
     &.peace {
       .cultural;
       .era-icon {
-        max-height: 15%;
+        height: 50px;
       }      
     }
     &.technology {
       .economic;
       .bicycle {
-        max-height: 18%;
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+        .flipped;
       }
-      .tractor {
-        max-height: 18%;
+      .era-icon {
+        height: 60px;
       }
 
     }
     &.ecological-restoration {
       .environmental;
       .tree {
-        max-height: 15%;
+        height: 60px;
       }
       .tree2 {
-        max-height: 30%;
-        height: 30%;
+        height: 140px;
       }
     }
     &.economic-resilience {
       .economic;
       .garden {
-        max-height: 15%;
+        height: 50px;
       }      
       .wind-farm {
-        max-height: 30%;
+        height: 100px;
       }
       path, circle {
         fill: #fff;          
@@ -375,106 +340,127 @@
     }
     &.meshnet {
       .political;
-      .wifi {
-        max-height: 15%;
+      .era-icon {
+        height: 50px;
       }
     }
 /* PRESENT MOMENT */
     &.climate-change {
       .environmental;
       .era-icon {
-        max-height: 20%;
+        height: 70px;
       }
     }
     &.early-robot-warfare {
       .conflict;
       .drone {
-        max-height: 20%;
+        height: 70px;
       }
     }
     &.rapid-scientific-progress {
       .cultural;
       .era-icon {
+        height: 70px;
       }
     }
     &.civil-unrest {
       .conflict;
       .era-icon {
-        max-height: 20%;
+        height: 70px;
         &.police {
-          max-height: 15%;
+          height: 45px;
         }
       }
     }
     &.global-capitalism {
       .economic;
+      .era-icon {
+        height: 70px;      
+      }
       .airplane {
         top: 50%;
-        max-height: 6%;
+        height: 20px;
       }
       .ship {
-        max-height: 8%;
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+        height: 30px;
+        .flipped;
       }
     }
     &.consumerism {
       .cultural;
       .shopping {
-        max-height: 12% !important;
+        height: 45px;
+      }
+      .building {
+        height: 90px;
       }
     }
     &.national-decline {
       .political;
+      .era-icon {
+        height: 90px;      
+      }
     }
     &.toxic-culture {
       .cultural;
       .television {
-        max-height: 20%;
+        height: 70px;
       }
       .skull {
         top: 17%;
-        max-height: 10%;
-        margin-left: 2px;
+        height: 35px;
       }      
     }
     &.financial-coup {
       .political;
       .bank {
         margin-left: -4%;
+        height: 70px;
+
       }
     }
     &.wage-slavery {
       .economic;
       .era-icon {
-        max-height: 12.5%;
+        height: 45px;
       }
     }
     &.internet {
       .political;
-      .wifi {
-        max-height: 15%;
+      .era-icon {
+        height: 50px;
       }
     }
 /* MODERN ERA */
     &.exponential-growth {
       .economic;
+      .era-icon {
+        height: 80px;
+      } 
     }
     &.industrialization {
       .economic;
+      .era-icon {
+        height: 70px;
+      }
     }
     &.urbanization {
       .political;
+      .era-icon {
+        height: 80px;
+      } 
     }
     &.ecological-exploitation {
       .environmental;
+      .era-icon {
+        height: 80px;
+      }      
     }
     &.revolution {
       .political;
+      .era-icon {
+        height: 80px;
+      }       
       .guillotine {
         z-index: 70;
       }
