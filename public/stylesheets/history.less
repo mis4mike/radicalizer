@@ -270,6 +270,9 @@
       }
     }
 /* OPEN ERA */
+    &.affinity-networks {
+      .political;
+    }
     &.sexual-liberation {
       .cultural;
       margin-top: 15px;
@@ -445,7 +448,7 @@
       }
     }
     &.urbanization {
-      .political;
+      .economic;
       .era-icon {
         height: 80px;
       } 
@@ -461,17 +464,91 @@
       .era-icon {
         height: 80px;
       }       
-      .guillotine {
-        z-index: 70;
+    }
+    &.mass-media {
+      .cultural;
+    }
+    &.nuclear-war {
+      .conflict;
+    }
+    &.democracy {
+      .political;
+      .era-icon {
+        height: 50px;
+      }
+    }
+    &.capitalism {
+      .economic;
+      .era-icon {
+        height: 90px;
+      }
+    }
+    &.science {
+      .cultural;
+      .era-icon {
+        height: 50px;
       }
     }
 /* POSTCLASSICAL ERA */
     &.theocracy {
       .political;
+      .era-icon {
+        height: 80px;
+      }   
     }
-/* ANCIENT HISTORY */
-/* PREHISTORY */
+    &.nobility {
+      .political;
+      .era-icon {
+        height: 65px;
+      }
+      .castle {
+        height: 100px;
+      }
+    }
+    &.guilds {
+      .economic;
+      .era-icon {
+        height: 65px;
+      }        
+      .guildhall {
+        height: 120px;
+        svg {
+          height: 120px !important;
+        }
+      }
+    }
+    &.peasants {
+      .economic;
+      .era-icon {
+        height: 45px;
+      }   
+      .grain {
+        svg {
+          position: absolute;
+          &:nth-child(1) {
+            left: 10px;
+          }
+          &:nth-child(2) {
+            left: 20px;
+          }
+          &:nth-child(3) {
+            left: 30px;
+          }
+          &:nth-child(4) {
+            left: 40px;
+          }          
+          &:nth-child(5) {
+            left: 50px;
+          }
+          &:nth-child(6) {
+            left: 60px;
+          }
+        }
+      }
+    }
   }
+/* ANCIENT HISTORY */
+/* PREHISTORY */  
 }
 .institution-name {
   position: relative;
