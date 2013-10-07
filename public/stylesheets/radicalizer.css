@@ -28,6 +28,7 @@
 .rating-box .inner-rating-box .buttons.strength .button.selected{vertical-align:top;-moz-box-shadow:0px 0px 2px 2px #f1d39d;-webkit-box-shadow:0px 0px 2px 2px #f1d39d;box-shadow:0px 0px 2px 2px #f1d39d}
 .rating-box .inner-rating-box .rating-description{text-align:center;font-size:10px}
 .political.active svg{stroke:#00F;fill:#bbf}
+.media.active svg{stroke:#00F;fill:#3CF}
 .economic.active svg,.economic.active circle,.economic.active path{fill:#FFCC00;stroke:#000}
 .conflict.active svg{fill:#F00;stroke:#000}
 .environmental.active svg{stroke:#000;fill:#339933}
@@ -35,7 +36,7 @@
 .era-container{position:relative}
 .era-container .go-to-era{margin-top:30px;cursor:pointer;font-size:20px;color:#999}.era-container .go-to-era i{font-size:65px}
 .era-container .go-to-era p{max-width:100%;margin-bottom:0}.era-container .go-to-era p.hover{color:#fff !important}
-.era{position:relative;padding:80px 48px 150px 48px;text-align:center;border-bottom:6px solid #ccc;font-weight:bold;}.era .title{position:relative;z-index:100;pointer-events:none;font-size:72px;color:#97f;-webkit-text-stroke:1px #555;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
+.era{position:relative;padding:80px 48px 150px 48px;text-align:center;border-bottom:6px solid #ccc;font-weight:bold}.era .title{position:relative;z-index:100;pointer-events:none;font-size:72px;color:#97f;-webkit-text-stroke:1px #555;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
 .era .era-dates{position:relative;z-index:40;pointer-events:none;font-size:30px;color:#97f;-webkit-text-stroke:1px #555;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
 .era .era-stage{position:absolute;border-bottom:100px solid #777;border-left:75px solid transparent;border-right:75px solid transparent;height:0;width:100%;left:0;bottom:0;z-index:-50}
 .era .era-institution{position:absolute;width:100%;height:375px;top:0;left:0;}.era .era-institution .era-icon{position:absolute;cursor:pointer}.era .era-institution .era-icon svg{position:relative;height:100% !important;fill:#fff;stroke:#777;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}
@@ -110,7 +111,7 @@
 .era .era-institution.economic-resilience .garden{height:50px}
 .era .era-institution.economic-resilience .wind-farm{height:100px}
 .era .era-institution.economic-resilience path,.era .era-institution.economic-resilience circle{fill:#fff}
-.era .era-institution.meshnet.active svg{stroke:#00F;fill:#bbf}
+.era .era-institution.meshnet.active svg{stroke:#00F;fill:#3CF}
 .era .era-institution.meshnet .era-icon{height:50px}
 .era .era-institution.climate-change.active svg{stroke:#000;fill:#339933}
 .era .era-institution.climate-change .era-icon{height:70px}
@@ -136,7 +137,7 @@
 .era .era-institution.financial-coup .bank{margin-left:-4%;height:70px}
 .era .era-institution.wage-slavery.active svg,.era .era-institution.wage-slavery.active circle,.era .era-institution.wage-slavery.active path{fill:#FFCC00;stroke:#000}
 .era .era-institution.wage-slavery .era-icon{height:45px}
-.era .era-institution.internet.active svg{stroke:#00F;fill:#bbf}
+.era .era-institution.internet.active svg{stroke:#00F;fill:#3CF}
 .era .era-institution.internet .era-icon{height:50px}
 .era .era-institution.exponential-growth.active svg,.era .era-institution.exponential-growth.active circle,.era .era-institution.exponential-growth.active path{fill:#FFCC00;stroke:#000}
 .era .era-institution.exponential-growth .era-icon{height:80px}
@@ -148,7 +149,7 @@
 .era .era-institution.ecological-exploitation .era-icon{height:80px}
 .era .era-institution.revolution.active svg{stroke:#00F;fill:#bbf}
 .era .era-institution.revolution .era-icon{height:80px}
-.era .era-institution.mass-media.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.mass-media.active svg{stroke:#00F;fill:#3CF}
 .era .era-institution.nuclear-war.active svg{fill:#F00;stroke:#000}
 .era .era-institution.democracy.active svg{stroke:#00F;fill:#bbf}
 .era .era-institution.democracy .era-icon{height:50px}
@@ -166,12 +167,39 @@
 .era .era-institution.guilds .guildhall{height:120px}.era .era-institution.guilds .guildhall svg{height:120px !important}
 .era .era-institution.peasants.active svg,.era .era-institution.peasants.active circle,.era .era-institution.peasants.active path{fill:#FFCC00;stroke:#000}
 .era .era-institution.peasants .era-icon{height:45px}
-.era .era-institution.peasants .grain svg{position:absolute}.era .era-institution.peasants .grain svg:nth-child(1){left:10px}
-.era .era-institution.peasants .grain svg:nth-child(2){left:20px}
-.era .era-institution.peasants .grain svg:nth-child(3){left:30px}
-.era .era-institution.peasants .grain svg:nth-child(4){left:40px}
-.era .era-institution.peasants .grain svg:nth-child(5){left:50px}
-.era .era-institution.peasants .grain svg:nth-child(6){left:60px}
+.era .era-institution .grain svg{position:absolute}.era .era-institution .grain svg:nth-child(1){left:10px}
+.era .era-institution .grain svg:nth-child(2){left:20px}
+.era .era-institution .grain svg:nth-child(3){left:30px}
+.era .era-institution .grain svg:nth-child(4){left:40px}
+.era .era-institution .grain svg:nth-child(5){left:50px}
+.era .era-institution .grain svg:nth-child(6){left:60px}
+.era .era-institution.writing.active svg{stroke:#00F;fill:#3CF}
+.era .era-institution.bureaucracy.active svg{stroke:#00F;fill:#bbf}
+.era .era-institution.religion.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.empire.active svg{stroke:#00F;fill:#bbf}
+.era .era-institution.deforestation.active svg{stroke:#000;fill:#339933}
+.era .era-institution.deforestation .tree{height:70px}
+.era .era-institution.deforestation .stump{height:10px}
+.era .era-institution.villages.active svg,.era .era-institution.villages.active circle,.era .era-institution.villages.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.hunting.active svg,.era .era-institution.hunting.active circle,.era .era-institution.hunting.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.hunting .era-icon{height:45px}
+.era .era-institution.extinction.active svg{stroke:#000;fill:#339933}
+.era .era-institution.extinction .era-icon{height:25px}
+.era .era-institution.mysticism.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.mysticism .meditation{height:30px}
+.era .era-institution.mysticism .plant{height:27px}
+.era .era-institution.sainthood.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.sainthood .era-icon{height:30px}
+.era .era-institution.sainthood .saint{height:42px}
+.era .era-institution.domestication.active svg,.era .era-institution.domestication.active circle,.era .era-institution.domestication.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.domestication .era-icon{height:30px}
+.era .era-institution.domestication .cow{height:50px}
+.era .era-institution.oral-tradition.active svg{stroke:#00F;fill:#3CF}
+.era .era-institution.tools.active svg,.era .era-institution.tools.active circle,.era .era-institution.tools.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.tools .era-icon{height:40px}
+.era .era-institution.tools .tool{height:15px}
+.era .era-institution.councils.active svg{stroke:#00F;fill:#bbf}
+.era .era-institution.natural-time.active svg{fill:#CC33FF;stroke:#000}
 .institution-name{position:relative;height:60px;width:100%;z-index:100;pointer-events:none;text-align:center;font-size:50px;color:#FFCC00;-webkit-text-stroke:1px #FFCC00;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
 #lightbox h2{margin:0}
 #lightbox .ratings{display:inline-block}
@@ -179,7 +207,7 @@
 #lightbox #lightbox-right{display:inline-block;float:right;max-width:83%;border:2px solid #fff;border-radius:12px;padding:24px;vertical-align:top;overflow-y:auto;background-color:#444}#lightbox #lightbox-right #lightbox-header{height:42px}#lightbox #lightbox-right #lightbox-header #lightbox-title{display:inline-block;margin-top:0}
 #lightbox #lightbox-right .action-box{margin-bottom:12px}#lightbox #lightbox-right .action-box .btn-lg{display:inline-block;margin-right:24px;font-size:24px;font-weight:bold}
 #lightbox .timeline{position:relative;display:inline-block;width:62%;height:192px;background:#e7e7e7;margin-top:12px;border:2px solid #fff;border-radius:6px 0 0 6px}#lightbox .timeline .inner-timeline{position:relative;height:100%;width:100%;background:#111;border-radius:6px 0 0 6px}#lightbox .timeline .inner-timeline .eras{position:relative;width:100%;height:100%}#lightbox .timeline .inner-timeline .eras .era{vertical-align:top;display:inline-block;width:25%;height:100%;border:0;border-right:1px solid #ccc;padding:15px 0 0 0;color:#444;font-size:24px;line-height:30px}
-#lightbox .timeline .timeline-graph{position:absolute;top:0;height:100%;width:100%}
+#lightbox .timeline .timeline-graph{position:absolute;top:0;height:96px;width:100%}
 #lightbox .diagram{display:inline-block;vertical-align:top;height:216px;width:25%;border:3px solid #e7e7e7;border-radius:12px;background-color:#111}#lightbox .diagram i{font-size:30px}
 #lightbox .diagram i.icon-arrow-down{display:block;margin:5px;font-size:12px}
 #lightbox .diagram i.icon-certificate{color:#fff9c9}
@@ -201,13 +229,19 @@
 #create-institution .eras .era .start-era{position:relative;display:inline-block;vertical-align:top;height:25%;width:100%;z-index:50;padding:0 !important;border:0;border-right:1px solid #ccc;font-size:16px;line-height:24px;color:#999;background:#1e5799;background:-moz-linear-gradient(top, #1e5799 0, #e7e7e7 0, #e7e7e7 0, #d8d8d8 95%, #545454 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #1e5799), color-stop(0, #e7e7e7), color-stop(0, #e7e7e7), color-stop(95%, #d8d8d8), color-stop(100%, #545454));background:-webkit-linear-gradient(top, #1e5799 0, #e7e7e7 0, #e7e7e7 0, #d8d8d8 95%, #545454 100%);background:-o-linear-gradient(top, #1e5799 0, #e7e7e7 0, #e7e7e7 0, #d8d8d8 95%, #545454 100%);background:-ms-linear-gradient(top, #1e5799 0, #e7e7e7 0, #e7e7e7 0, #d8d8d8 95%, #545454 100%);background:linear-gradient(to bottom, #1e5799 0, #e7e7e7 0, #e7e7e7 0, #d8d8d8 95%, #545454 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#545454', GradientType=0);}#create-institution .eras .era .start-era.prehistory{border-radius:5px 0 0 0}
 #create-institution .eras .era .ui-slider{position:absolute;bottom:0;left:40%;height:70%;width:16px;z-index:50;border-color:transparent;background:transparent}#create-institution .eras .era .ui-slider .ui-slider-range{background:transparent}
 #create-institution .eras .era .ui-slider .ui-slider-handle{height:10px;margin:0;background:transparent;border-color:transparent}
+.theme-1{background-color:#000;color:#ccc}.theme-1 #header{background:#111111;background:-moz-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #111), color-stop(7%, #3a3a3a), color-stop(100%, #515151));background:-webkit-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-o-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-ms-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:linear-gradient(to bottom, #111 0, #3a3a3a 7%, #515151 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111', endColorstr='#515151', GradientType=0);}
+.theme-1 #nav a{color:#ccc}
+.theme-1 #lightbox{background:#111111;background:-moz-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #111), color-stop(7%, #3a3a3a), color-stop(100%, #515151));background:-webkit-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-o-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-ms-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:linear-gradient(to bottom, #111 0, #3a3a3a 7%, #515151 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111', endColorstr='#515151', GradientType=0);}.theme-1 #lightbox .close{color:#fff}
 *{-moz-box-sizing:border-box;box-sizing:border-box}
-@font-face{font-family:abaddon;src:url('/fonts/abaddon.TTF')}body{font-family:Arial, calibri, sans;background-color:#000;color:#ccc}body #header{position:fixed;top:0;height:64px;width:100%;border-bottom:2px solid #fff;z-index:1000;background:#111111;background:-moz-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #111), color-stop(7%, #3a3a3a), color-stop(100%, #515151));background:-webkit-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-o-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-ms-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:linear-gradient(to bottom, #111 0, #3a3a3a 7%, #515151 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111', endColorstr='#515151', GradientType=0);}body #header:before,body #header:after{content:" ";display:table;}
+@font-face{font-family:abaddon;src:url('/fonts/abaddon.TTF')}body{font-family:Arial, calibri, sans;background-color:#000;color:#ccc}body #header{background:#111111;background:-moz-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #111), color-stop(7%, #3a3a3a), color-stop(100%, #515151));background:-webkit-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-o-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-ms-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:linear-gradient(to bottom, #111 0, #3a3a3a 7%, #515151 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111', endColorstr='#515151', GradientType=0);}
+body #nav a{color:#ccc}
+body #lightbox{background:#111111;background:-moz-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #111), color-stop(7%, #3a3a3a), color-stop(100%, #515151));background:-webkit-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-o-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-ms-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:linear-gradient(to bottom, #111 0, #3a3a3a 7%, #515151 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111', endColorstr='#515151', GradientType=0);}body #lightbox .close{color:#fff}
+body #header{position:fixed;top:0;height:64px;width:100%;border-bottom:2px solid #fff;z-index:1000}body #header:before,body #header:after{content:" ";display:table;}
 body #header:after{clear:both}
 body #header h1{display:inline-block;position:absolute;right:65px;top:0px;margin-top:2px;font-family:abaddon;font-size:47px}
 body #header h4{display:inline-block;position:absolute;right:65px;top:32px}
 body #header #nav{display:inline-block;margin-top:12px}body #header #nav ul{list-style-type:none}body #header #nav ul li{display:inline-block;padding:10px;font-weight:bold}
-body #header #nav ul li a{text-decoration:none;color:#ccc}
+body #header #nav ul li a{text-decoration:none}
 body #content{margin-top:64px}
-body #lightbox{position:fixed;top:64px;left:0;right:0;bottom:100%;margin:24px;z-index:2000;overflow:hidden;overflow-y:auto;height:0px;background:#111111;background:-moz-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #111), color-stop(7%, #3a3a3a), color-stop(100%, #515151));background:-webkit-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-o-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-ms-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:linear-gradient(to bottom, #111 0, #3a3a3a 7%, #515151 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111', endColorstr='#515151', GradientType=0);-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;-o-transition:all .5s ease-out;transition:all .5s ease-out}body #lightbox.active{height:auto;bottom:0;border:2px solid #fff;border-radius:12px;padding:24px}
-body #lightbox .close{float:right;color:#fff}
+body #lightbox{position:fixed;top:64px;left:0;right:0;bottom:100%;margin:24px;z-index:2000;overflow:hidden;overflow-y:auto;height:0px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;-o-transition:all .5s ease-out;transition:all .5s ease-out}body #lightbox.active{height:auto;bottom:0;border:2px solid #fff;border-radius:12px;padding:24px}
+body #lightbox .close{float:right}

@@ -14,6 +14,14 @@
     }
   }  
 }
+.media {
+  &.active {
+    svg {
+      stroke: #00F;
+      fill: #3CF;
+    }
+  }  
+}
 .economic {    
   &.active {
     svg, circle, path {
@@ -342,7 +350,7 @@
       }
     }
     &.meshnet {
-      .political;
+      .media;
       .era-icon {
         height: 50px;
       }
@@ -429,7 +437,7 @@
       }
     }
     &.internet {
-      .political;
+      .media;
       .era-icon {
         height: 50px;
       }
@@ -466,7 +474,7 @@
       }       
     }
     &.mass-media {
-      .cultural;
+      .media;
     }
     &.nuclear-war {
       .conflict;
@@ -522,33 +530,114 @@
       .era-icon {
         height: 45px;
       }   
-      .grain {
-        svg {
-          position: absolute;
-          &:nth-child(1) {
-            left: 10px;
-          }
-          &:nth-child(2) {
-            left: 20px;
-          }
-          &:nth-child(3) {
-            left: 30px;
-          }
-          &:nth-child(4) {
-            left: 40px;
-          }          
-          &:nth-child(5) {
-            left: 50px;
-          }
-          &:nth-child(6) {
-            left: 60px;
-          }
+    }
+    .grain {
+      svg {
+        position: absolute;
+        &:nth-child(1) {
+          left: 10px;
+        }
+        &:nth-child(2) {
+          left: 20px;
+        }
+        &:nth-child(3) {
+          left: 30px;
+        }
+        &:nth-child(4) {
+          left: 40px;
+        }          
+        &:nth-child(5) {
+          left: 50px;
+        }
+        &:nth-child(6) {
+          left: 60px;
         }
       }
     }
-  }
 /* ANCIENT HISTORY */
-/* PREHISTORY */  
+    &.writing {
+      .media;
+    }
+    &.bureaucracy {
+      .political;
+    }
+    &.religion {
+      .cultural;
+    }
+    &.empire {
+      .political;
+    }
+    &.deforestation {
+      .environmental;
+      .tree {
+        height: 70px;
+      }
+      .stump {
+        height: 10px;
+      }
+    }
+/* PREHISTORY */ 
+    &.villages {
+      .economic;
+    }
+    &.hunting {
+      .economic;
+      .era-icon {
+        height: 45px;
+      }
+    }
+    &.extinction {
+      .environmental;
+      .era-icon {
+        height: 25px;
+      }
+    }
+    &.mysticism {
+      .cultural;
+      .meditation {
+        height: 30px;
+      }
+      .plant {
+        height: 27px;  
+      }
+    }
+    &.sainthood {
+      .cultural;
+      .era-icon {
+        height: 30px;
+      }
+      .saint {
+        height: 42px;
+      }
+    }
+    &.domestication {
+      .economic;
+      .era-icon {
+        height: 30px;
+      }
+      .cow{
+        height: 50px;
+      }
+    }
+    &.oral-tradition {
+      .media;
+    }
+    &.tools {
+      .economic;
+      .era-icon {
+        height: 40px;
+      }
+      .tool {
+        height: 15px;
+      }
+    }
+    &.councils {
+      .political;
+    }
+    &.natural-time {
+      .cultural;
+    } 
+  } 
 }
 .institution-name {
   position: relative;

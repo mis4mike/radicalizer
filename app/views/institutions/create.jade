@@ -15,58 +15,30 @@ block content
             |Postclassical Era
             input(type='radio' name='startEra' value='modern')
             |Modern Era  
-            input(type='radio' name='relevance[prehistory]' value='0') 
-            |Not Relevant
-            input(type='radio' name='relevance[prehistory]' value='1') 
-            |Somewhat Relevant
-            input(type='radio' name='relevance[prehistory]' value='2') 
-            |Definitely Relevant
-            input(type='radio' name='relevance[prehistory]' value='3') 
-            |Extremely Relevant
-            input(type='radio' name='relevance[ancient]' value='0') 
-            |Not Relevant
-            input(type='radio' name='relevance[ancient]' value='1') 
-            |Somewhat Relevant
-            input(type='radio' name='relevance[ancient]' value='2') 
-            |Definitely Relevant
-            input(type='radio' name='relevance[ancient]' value='3') 
-            |Extremely Relevant
-            input(type='radio' name='relevance[postclassical]' value='0') 
-            |Not Relevant
-            input(type='radio' name='relevance[postclassical]' value='1') 
-            |Somewhat Relevant
-            input(type='radio' name='relevance[postclassical]' value='2') 
-            |Definitely Relevant
-            input(type='radio' name='relevance[postclassical]' value='3') 
-            |Extremely Relevant
-            input(type='radio' name='relevance[modern]' value='0') 
-            |Not Relevant
-            input(type='radio' name='relevance[modern]' value='1') 
-            |Somewhat Relevant
-            input(type='radio' name='relevance[modern]' value='2') 
-            |Definitely Relevant
-            input(type='radio' name='relevance[modern]' value='3') 
-            |Extremely Relevant     
-            input(name='diagram' type='text')
+            input.prehistory-relevance(type='number' name='relevance[prehistory]' value='0') 
+            input.ancient-relevance(type='number' name='relevance[ancient]' value='0') 
+            input.postclassical-relevance(type='number' name='relevance[postclassical]' value='0') 
+            input.modern-relevance(type='number' name='relevance[modern]' value='0')  
+            input.institution-diagram(name='diagram' type='text')
           .timeline       
             .inner-timeline
               .eras
                 .era.prehistory.active
                   .start-era.prehistory X - 3500 BCE
                   |Prehistory
-                  #prehistory-slider.era-slider
+                  #prehistory-slider.era-slider(data-era='prehistory')
                 .era.ancient.active
                   .start-era.ancient 3500 BCE - 500 CE
                   |Ancient History
-                  #ancient-slider.era-slider
+                  #ancient-slider.era-slider(data-era='ancient')
                 .era.postclassical.active
                   .start-era.postclassical 500 - 1500
                   |Postclassical Era
-                  #postclassical-slider.era-slider
+                  #postclassical-slider.era-slider(data-era='postclassical')
                 .era.modern.active
                  .start-era.modern 1500 - 20XX
                  |Modern Era
-                 #modern-slider.era-slider
+                 #modern-slider.era-slider(data-era='modern')
             canvas.timeline-graph
           textarea(name='description' placeholder='Explain the Institution Here')
         .right

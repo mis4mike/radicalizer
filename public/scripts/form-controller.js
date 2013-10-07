@@ -2,7 +2,7 @@ var formController = {
   init: function () {
     /* look for containers and make them work */
     if($('#create-institution').length) {
-      this.createInstitutionSetup();
+      formController.createInstitutionSetup();
     }
   },
   createInstitutionSetup: function () {
@@ -20,13 +20,32 @@ var formController = {
       min: 0,
       max: 3,
       value: 0,
-      slide: function( event, ui ) {
-        this.drawTimelineGraph();
+      stop: function (event, ui) {
+        formController.updateTimelineValues(event, ui);
       }
     });
   },
+  updateTimelineValues: function (event, ui) {
+    /* update form fields */
+    $('.' + $(event.target).data('era') + '-relevance').val(ui.value);
+    formController.drawTimelineGraph();
+  },
   drawTimelineGraph: function () {
+    console.log('drawing!')
     var graph = $('.timeline-graph');
+    var context = graph[0].getContext('2d');
+    var heightY = 140;
+    context.clearRect ( 0 , 0 , graph.width() , heightY + 6 );
+    console.log(graph.height());
+    context.beginPath();
+    context.moveTo(0,heightY);
+    context.lineTo(34,heightY - 36 * parseInt($('.prehistory-relevance').val()));
+    context.lineTo(108,heightY - 36 * parseInt($('.ancient-relevance').val()));
+    context.lineTo(184,heightY - 36 * parseInt($('.postclassical-relevance').val()));
+    context.lineTo(260,heightY - 36 * parseInt($('.modern-relevance').val()));
+    context.strokeStyle='red';
+    context.lineWidth = 3;
+    context.stroke();
   }
 }
 

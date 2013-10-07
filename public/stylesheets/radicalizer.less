@@ -6,6 +6,7 @@
 //page layouts and styling
 @import './history.less';
 @import './institutions.less';
+@import './themes.less';
 
 @header-height: 64px;
 
@@ -22,8 +23,7 @@
 //Main layout styles
 body {
   font-family: Arial, calibri, sans;
-  background-color: #000;
-  color: #ccc;
+  .theme-1;
 
   #header {
     position: fixed;
@@ -33,7 +33,6 @@ body {
     border-bottom: 2px solid #fff;
     z-index: 1000;
 
-    .dark-grey-gradient;
     .clearfix();
 
     h1 {
@@ -68,7 +67,6 @@ body {
           }
           a {
             text-decoration: none;
-            color: #ccc;
           }
         }
       }
@@ -88,7 +86,6 @@ body {
     overflow: hidden;
     overflow-y: auto;
     height: 0px;
-    .dark-grey-gradient;
     .transition(.5s, ease-out);
 
     &.active {
@@ -100,7 +97,6 @@ body {
     }      
     .close {
       float: right;
-      color: #fff;
     }
   }
   #lightbox-content {
