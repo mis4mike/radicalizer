@@ -1,7 +1,7 @@
 $(document).on('ready', function () {
   $('.go-to-era').on('click', function () {
-    $('.era-container').hide('blind');
-    $('.era-container.'+$(this).data('era')).toggle('blind');
+    $('.era-container').hide('fade');
+    $('.era-container.'+$(this).data('era')).toggle('fade');
   })
   $('.era-icon').hover( function () {
     $(this).parents('.era-institution').addClass('active');

@@ -6,7 +6,24 @@
   
 }*/
 //default coloring schemes for institution hovering
-.political {
+.violence { // RED
+  &.active {
+    svg {
+      fill: #F00;
+      stroke: #000;
+    }
+  }
+}
+.economic { //ORANGE
+  &.active {
+    svg, circle, path {
+      fill: #FFCC00;
+      stroke: #000;
+    }
+  }
+}
+//YELLOW (Finance)
+.politics {
   &.active {
     svg {
       stroke: #00F;
@@ -22,23 +39,7 @@
     }
   }  
 }
-.economic {    
-  &.active {
-    svg, circle, path {
-      fill: #FFCC00;
-      stroke: #000;
-    }
-  }
-}
-.conflict {
-  &.active {
-    svg {
-      fill: #F00;
-      stroke: #000;
-    }
-  }
-}
-.environmental {
+.natural {
   &.active {
     svg {
       stroke: #000;
@@ -56,16 +57,30 @@
 }
 .era-container {
   position: relative;
+  height: auto;
   .col-md-1 {
+    height: 100%;
     p { 
       //display: inline-block; 
     }
   }
   .go-to-era {
-    margin-top: 30px;
+    position: absolute;
+    top: 0;
+    margin: 20px;
     cursor: pointer;
     font-size: 20px;
     color: #999;
+    &.right {
+      right: 0;
+      text-align: right;
+    }
+    &.left {
+      left: 0;
+    }
+    &.bottom {
+      top: 100px;
+    }
     i {
       font-size: 65px;
     }
@@ -123,7 +138,6 @@
     width: 100%;
     left: 0;
     bottom: 0;
-    z-index: -50;
   }
   .era-institution {
     position: absolute;
@@ -203,13 +217,13 @@
 /* specific institutions start here */
 /* POLICE STATE */
     &.robot-warfare {
-      .conflict;
+      .violence;
       .era-icon {
         height: 112px;
       }
     }
     &.police-state {
-      .political;
+      .politics;
       .era-icon {
         height: 54px; 
       } 
@@ -231,7 +245,7 @@
       }
     }
     &.ecocide {
-      .environmental;
+      .natural;
       .era-icon { 
         height: 80px;
       }
@@ -244,7 +258,7 @@
       }
     }
     &.social-unrest {
-      .conflict;
+      .violence;
       .era-icon {
         height: 75px;
         .flipped;
@@ -277,7 +291,7 @@
     }
 /* OPEN ERA */
     &.affinity-networks {
-      .political;
+      .politics;
     }
     &.sexual-liberation {
       .cultural;
@@ -327,7 +341,7 @@
 
     }
     &.ecological-restoration {
-      .environmental;
+      .natural;
       .tree {
         height: 60px;
       }
@@ -355,13 +369,13 @@
     }
 /* PRESENT MOMENT */
     &.climate-change {
-      .environmental;
+      .natural;
       .era-icon {
         height: 70px;
       }
     }
     &.early-robot-warfare {
-      .conflict;
+      .violence;
       .drone {
         height: 70px;
       }
@@ -373,7 +387,7 @@
       }
     }
     &.civil-unrest {
-      .conflict;
+      .violence;
       .era-icon {
         height: 70px;
         &.police {
@@ -405,7 +419,7 @@
       }
     }
     &.national-decline {
-      .political;
+      .politics;
       .era-icon {
         height: 90px;      
       }
@@ -421,7 +435,7 @@
       }      
     }
     &.financial-coup {
-      .political;
+      .politics;
       .bank {
         margin-left: -4%;
         height: 70px;
@@ -460,13 +474,13 @@
       } 
     }
     &.ecological-exploitation {
-      .environmental;
+      .natural;
       .era-icon {
         height: 80px;
       }      
     }
     &.revolution {
-      .political;
+      .politics;
       .era-icon {
         height: 80px;
       }       
@@ -475,10 +489,10 @@
       .media;
     }
     &.nuclear-war {
-      .conflict;
+      .violence;
     }
     &.democracy {
-      .political;
+      .politics;
       .era-icon {
         height: 50px;
       }
@@ -497,13 +511,13 @@
     }
 /* POSTCLASSICAL ERA */
     &.theocracy {
-      .political;
+      .politics;
       .era-icon {
         height: 80px;
       }   
     }
     &.nobility {
-      .political;
+      .politics;
       .era-icon {
         height: 65px;
       }
@@ -557,16 +571,16 @@
       .media;
     }
     &.bureaucracy {
-      .political;
+      .politics;
     }
     &.religion {
       .cultural;
     }
     &.empire {
-      .political;
+      .politics;
     }
     &.deforestation {
-      .environmental;
+      .natural;
       .tree {
         height: 70px;
       }
@@ -585,7 +599,7 @@
       }
     }
     &.extinction {
-      .environmental;
+      .natural;
       .era-icon {
         height: 25px;
       }
@@ -630,7 +644,7 @@
       }
     }
     &.councils {
-      .political;
+      .politics;
     }
     &.natural-time {
       .cultural;

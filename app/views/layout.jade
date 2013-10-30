@@ -12,7 +12,12 @@ html(lang="en")
     script(src="/scripts/form-controller.js")
     script(src="/scripts/history.js")
 body
-  include _header
-  block content
+  #content.container
+    .screen
+      include _lightbox
+      block content
+    .row
+      .col-md-12
+        include _header
   footer
     a(href='/credits/') Credits

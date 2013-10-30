@@ -24,13 +24,12 @@
 body {
   font-family: Arial, calibri, sans;
   .theme-1;
+  background: url(/images/wood-walnut-background-tile.jpg);
 
   #header {
-    position: fixed;
     top: 0;
     height: @header-height;
     width: 100%;
-    border-bottom: 2px solid #fff;
     z-index: 1000;
 
     .clearfix();
@@ -73,33 +72,46 @@ body {
     }    
   }
   #content {
-    margin-top: @header-height;
-  }
-  #lightbox {
-    position: fixed;
-    top: 64px;
-    left: 0;
-    right: 0;
-    bottom: 100%;
-    margin: 24px;
-    z-index: 2000;
-    overflow: hidden;
-    overflow-y: auto;
-    height: 0px;
-    .transition(.5s, ease-out);
+    padding: 0;
+    max-width: 85%;
+    #lightbox {
+      position: fixed;
+      top: 64px;
+      left: 0;
+      right: 0;
+      bottom: 100%;
+      margin: 24px;
+      z-index: 2000;
+      overflow: hidden;
+      overflow-y: auto;
+      height: 0px;
+      .transition(.5s, ease-out);
 
-    &.active {
-      height: auto;
-      bottom: 0;
-      border: 2px solid #fff;
-      border-radius: 12px;
-      padding: 24px;
-    }      
-    .close {
-      float: right;
+      &.active {
+        height: auto;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 12px;
+        padding: 24px;
+      }
+      .close {
+        float: right;
+      }
+      #lightbox-content {
+      }
+    } 
+
+    margin-top: 20px;
+    border: 6px solid #ccc;
+    border-radius: 12px;
+    .screen {
+      background: #000;
+      overflow: hidden;
+      height: 490px;
+      margin: 20px 20px 0 20px;
+      border: 6px solid #ccc;
+      padding: 20px;
     }
-  }
-  #lightbox-content {
   }
 }
 //Less mixins
