@@ -22,24 +22,15 @@
     }
   }
 }
-//YELLOW (Finance)
-.politics {
+.money { //YELLOW (Finance)
   &.active {
     svg {
       stroke: #00F;
-      fill: #bbf;
+      fill: #FFCC02;
     }
   }  
 }
-.media {
-  &.active {
-    svg {
-      stroke: #00F;
-      fill: #3CF;
-    }
-  }  
-}
-.natural {
+.natural { //GREEN
   &.active {
     svg {
       stroke: #000;
@@ -47,7 +38,23 @@
     }
   }
 }
-.cultural {
+.media { //TEAL
+  &.active {
+    svg {
+      stroke: #00F;
+      fill: #3CF;
+    }
+  }  
+}
+.politics { //BLUE
+  &.active {
+    svg {
+      stroke: #00F;
+      fill: #0A40EB;
+    }
+  }  
+}
+.cultural { //PURPLE - Sources of ideology or truth in society
   &.active {
     svg {
       fill: #CC33FF;
@@ -58,6 +65,7 @@
 .era-container {
   position: relative;
   height: auto;
+  margin-bottom: 30px;
   .col-md-1 {
     height: 100%;
     p { 
@@ -82,15 +90,15 @@
     &.bottom {
       top: 100px;
     }
+    &:hover {
+      color: #fff !important;
+    }
     i {
       font-size: 65px;
     }
     p {
       max-width:100%;
       margin-bottom: 0;
-      &.hover {
-        color: #fff !important;
-      }
     }
   }  
 }
@@ -273,7 +281,7 @@
       }
     }
     &.stratification {
-      .economic;
+      .money;
       margin-top: -.5%;
       .era-icon {
         &.city {
@@ -436,7 +444,7 @@
       }      
     }
     &.financial-coup {
-      .politics;
+      .money;
       .bank {
         margin-left: -4%;
         height: 70px;

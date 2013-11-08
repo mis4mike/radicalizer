@@ -1,19 +1,43 @@
 .theme-1 {
-  color: #ccc;
+  color: #888;
+  background: url(/images/wood-walnut-background-tile.jpg);
+  .skin {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(/images/metal-background-3.jpg);
+    opacity: 0.8;
+    border-radius:6px;
+    z-index: 0;
+  }
   #content {
-    .dark-grey-gradient;
+    .dark-shadow;
+    background-color: #ccc;
   }
   #header {
     
   }
-
+  #branding {
+    color: #888;
+    h1 {
+      text-shadow: none;
+    }
+    a {
+      color: #0D5F2F;
+      text-decoration: none;
+      &:hover {
+        color: #32AF66;
+      };
+    }
+  }
   #nav {
     a {
-        color: #ccc;
+        color: #000;
     }
   }
   #lightbox {
-    .dark-grey-gradient;
     .close {
       color: #fff;
     }

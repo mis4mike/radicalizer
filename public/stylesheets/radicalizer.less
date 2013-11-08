@@ -22,37 +22,64 @@
 }
 //Main layout styles
 body {
-  font-family: Arial, calibri, sans;
   .theme-1;
-  background: url(/images/wood-walnut-background-tile.jpg);
 
+  font-family: Arial, calibri, sans;
+  /* Look and feel stuff is in themes.less */
+  
+  #dont-panic {
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px #E0E0E0, -1px -1px #444;
+    margin: 5px !important;
+  }
   #header {
     top: 0;
     height: @header-height;
     width: 100%;
     z-index: 1000;
+    text-align: center;
+    text-shadow: 1px 1px white, -1px -1px #444;
 
     .clearfix();
 
-    h1 {
-      display: inline-block;
-      position: absolute;
-      right: 65px;
-      top: 0px;
-      margin-top: 2px;
-      font-family: abaddon;
-      font-size: 47px;
-    }
-    h4 {
-      display: inline-block;
-      position: absolute;
-      right: 65px;
-      top: 32px;
 
+    #branding {
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #000;
+      h1 {
+        display: inline-block;
+        position: absolute;
+        right: 65px;
+        top: 0px;
+        margin-top: 2px;
+        font-family: abaddon;
+        font-size: 47px;
+      }
+      h4 {
+        display: inline-block;
+        position: absolute;
+        right: 65px;
+        top: 35px;
+
+      }
+    }
+    #tagline {
+      display: inline-block;
+      float: left;
+      color: #000;
+      margin-left: 3%;
+      max-width: 25%;
+      h4 {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: cursive, sans-serif;
+      }
     }
     #nav {
       display: inline-block;
       margin-top: 12px;
+      float: left;
       ul {
         list-style-type: none;
 
@@ -60,56 +87,87 @@ body {
           display: inline-block;
           padding: 10px;
           font-weight: bold;
+          border: 1px solid #000;
+          border-width: 1px 1px 3px 1px;
+          margin-right: 4px;
+          border-radius: 3px 3px 2px 2px;
+          color: #000;
+          background:rgba(255, 255, 255, 0.3);
+          font-size: 14px;
 
-          &.active {
-
+          &.clicked {
+            border-bottom: 1px solid;
+            position: relative;
+            top: 2px;
           }
           a {
             text-decoration: none;
+            color: #000;
           }
         }
       }
     }    
   }
   #content {
+    position: relative;
     padding: 0;
-    max-width: 85%;
+    max-width: 1000px;
+    margin-top: 20px;
+    border: 3px solid #ccc;
+    border-radius: 12px;
+    
     #lightbox {
-      position: fixed;
-      top: 64px;
-      left: 0;
-      right: 0;
-      bottom: 100%;
-      margin: 24px;
+      height: 0px;
       z-index: 2000;
       overflow: hidden;
       overflow-y: auto;
-      height: 0px;
       .transition(.5s, ease-out);
 
       &.active {
-        height: auto;
-        bottom: 0;
-        border: 2px solid #fff;
-        border-radius: 12px;
-        padding: 24px;
+        display: block;
+        height: 100%;
       }
       .close {
         float: right;
       }
-      #lightbox-content {
+      #lightbox-left {
+        display: inline-block;
+        width: 17%;
+        overflow-y: auto;
+        ul {
+          list-style-type: none;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding-left: 0;
+
+          li {
+            font-weight: normal;
+            text-transform: none;
+          }
+        }
+      }
+      #lightbox-right {
+        display: inline-block;
+        max-width: 81%;
+        padding-left: 12px;
+        vertical-align: top;
+        overflow-y: auto;
+        #lightbox-header {
+          height: 42px;
+          #lightbox-title {
+            display: inline-block;
+            margin-top: 0;
+          }
+        }
       }
     } 
-
-    margin-top: 20px;
-    border: 6px solid #ccc;
-    border-radius: 12px;
     .screen {
+      position: relative;
       background: #000;
       overflow: hidden;
       height: 490px;
-      margin: 20px 20px 0 20px;
-      border: 6px solid #ccc;
+      margin: 0 20px 0 20px;
+      border: 3px solid #ccc;
       padding: 20px;
     }
   }
