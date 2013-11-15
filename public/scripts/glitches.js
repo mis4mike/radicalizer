@@ -7,12 +7,12 @@ var glitches = (function() {
     staticLoop : function() {
       window.setTimeout(function() {
         $('#static').fadeToggle(
-          Math.floor((Math.random()*400)+1), 
+          Math.floor((Math.random()*200)+1), 
           function(){
             $('#static').fadeToggle();
             glitches.staticLoop();
           });
-      }, Math.floor((Math.random()*120000)+1) )
+      }, Math.floor((Math.random()*180000)+1) )
     }
   }
 })();

@@ -4,6 +4,35 @@ var formController = {
     if($('#create-institution').length) {
       formController.createInstitutionSetup();
     }
+    if($('.form-box').length) {
+      formController.institutionResponsesSetup();
+    }    
+  },
+  institutionResponsesSetup: function () {
+    $('.share-it').on('click', function () {
+      if($('.share-box').hasClass('active')) {
+        $('.share-box').slideToggle().removeClass('active');
+      } else {
+        $('.form-box div').hide('blind').removeClass('active');
+        $('.share-box').slideToggle().addClass('active');
+      }
+    });
+    $('.rock-it').on('click', function () {
+      if($('.response-box-positive').hasClass('active')) {
+        $('.response-box-positive').slideToggle().removeClass('active');
+      } else {
+        $('.form-box div').hide('blind').removeClass('active');        
+        $('.response-box-positive').slideToggle().addClass('active');
+      }
+    });
+    $('.block-it').on('click', function () {
+      if($('.response-box-negative').hasClass('active')) {
+        $('.response-box-negative').slideToggle().removeClass('active');
+      } else {
+        $('.form-box div').hide('blind').removeClass('active');
+        $('.response-box-negative').slideToggle().addClass('active');
+      }
+    });
   },
   createInstitutionSetup: function () {
 /*    $("#institution-name").on('blur', function () {
