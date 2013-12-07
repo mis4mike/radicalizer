@@ -9,28 +9,52 @@ var formController = {
     }    
   },
   institutionResponsesSetup: function () {
+    $('.rating-box .button').on('click', function () {
+      $this = $(this);
+      $this.siblings().removeClass('active');
+      $this.addClass('active');
+      if(!$this.parent().hasClass('strength')) {
+        $this.prevAll().addClass('active');
+      }
+      $this.parents('.inner-rating-box').find('.rating-description').html($this.data('title'));
+    })
     $('.share-it').on('click', function () {
       if($('.share-box').hasClass('active')) {
+        $('.ratings').hide('blind', function () {$('.form-box').hide();});
         $('.share-box').slideToggle().removeClass('active');
+        $('.form-box').hide('blind');
       } else {
-        $('.form-box div').hide('blind').removeClass('active');
+        $('.form-box').show('blind');
+        $('.response-boxes .active').hide('blind').removeClass('active');
         $('.share-box').slideToggle().addClass('active');
+        $('.ratings').show('blind');
+        $('.form-box input').blur();
       }
     });
     $('.rock-it').on('click', function () {
       if($('.response-box-positive').hasClass('active')) {
+        $('.ratings').hide('blind', function () {$('.form-box').hide();});
         $('.response-box-positive').slideToggle().removeClass('active');
+        $('.form-box').hide('blind');
       } else {
-        $('.form-box div').hide('blind').removeClass('active');        
+        $('.form-box').show('blind');
+        $('.response-boxes .active').hide('blind').removeClass('active');        
         $('.response-box-positive').slideToggle().addClass('active');
+        $('.ratings').show('blind');
+        $('.form-box input').blur();
       }
     });
     $('.block-it').on('click', function () {
       if($('.response-box-negative').hasClass('active')) {
+        $('.ratings').hide('blind', function () {$('.form-box').hide();});
         $('.response-box-negative').slideToggle().removeClass('active');
+        $('.form-box').hide('blind');
       } else {
-        $('.form-box div').hide('blind').removeClass('active');
+        $('.form-box').show('blind');
+        $('.response-boxes .active').hide('blind').removeClass('active');
         $('.response-box-negative').slideToggle().addClass('active');
+        $('.ratings').show('blind');
+        $('.form-box input').blur();
       }
     });
   },

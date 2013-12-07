@@ -12,12 +12,19 @@
 .yellow-glow-on,.yellow-glow:hover{border-color:rgba(255,198,24,0.6) !important;outline:0;outline:thin dotted \9;box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,198,24,0.6) !important}@include transition(all 0.2s ease-out);
 .dark-shadow{-webkit-box-shadow:0 8px 22px #323232;-moz-box-shadow:0 8px 22px #323232;box-shadow:0 8px 22px #323232}
 .violence.active svg{fill:#F00;stroke:#000}
+.violence.throbbing svg{stroke:#F00;stroke-width:1px}
 .economic.active svg,.economic.active circle,.economic.active path{fill:#FFCC00;stroke:#000}
+.economic.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .money.active svg{stroke:#00F;fill:#FFCC02}
+.money.throbbing svg{stroke:#FFCC02;stroke-width:1px}
 .natural.active svg{stroke:#000;fill:#339933}
+.natural.throbbing svg{stroke:#339933;stroke-width:1px}
 .media.active svg{stroke:#00F;fill:#3CF}
+.media.throbbing svg{stroke:#3CF;stroke-width:1px}
 .politics.active svg{stroke:#00F;fill:#0A40EB}
+.politics.throbbing svg{stroke:#0A40EB;stroke-width:1px}
 .cultural.active svg{fill:#CC33FF;stroke:#000}
+.cultural.throbbing svg{stroke:#CC33FF;stroke-width:1px}
 .era-container{position:relative;height:auto;margin-bottom:30px}.era-container .col-md-1{height:100%}
 .era-container .go-to-era{position:absolute;top:0;z-index:10;margin:20px;cursor:pointer;font-size:20px;color:#999}.era-container .go-to-era.right{right:0;text-align:right}
 .era-container .go-to-era.left{left:0}
@@ -53,6 +60,7 @@
 .era .era-institution .era-icon.left-50{left:50%}
 .era .era-institution .era-icon.sky{top:0%;z-index:50}
 .era .era-institution .era-icon.lower-sky{top:10%;z-index:50}
+.era .era-institution .era-icon.lowest-sky{top:15%;z-index:50}
 .era .era-institution .era-icon.layer-0{bottom:0%;z-index:70}
 .era .era-institution .era-icon.layer-1{bottom:5%;z-index:60}
 .era .era-institution .era-icon.layer-2{bottom:10%;z-index:50}
@@ -61,100 +69,139 @@
 .era .era-institution .era-icon.layer-5{bottom:25%;z-index:20}
 .era .era-institution .era-icon.layer-6{bottom:30%;z-index:10}
 .era .era-institution.robot-warfare.active svg{fill:#F00;stroke:#000}
+.era .era-institution.robot-warfare.throbbing svg{stroke:#F00;stroke-width:1px}
 .era .era-institution.robot-warfare .era-icon{height:112px}
 .era .era-institution.police-state.active svg{stroke:#00F;fill:#0A40EB}
+.era .era-institution.police-state.throbbing svg{stroke:#0A40EB;stroke-width:1px}
 .era .era-institution.police-state .era-icon{height:54px}
 .era .era-institution.economic-decay.active svg,.era .era-institution.economic-decay.active circle,.era .era-institution.economic-decay.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.economic-decay.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.economic-decay .era-icon{height:60px}.era .era-institution.economic-decay .era-icon.layer-2{max-height:12.5% !important}
 .era .era-institution.economic-decay .era-icon.layer-3{max-height:10% !important}
 .era .era-institution.economic-decay .era-icon.trash{max-height:7% !important;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
 .era .era-institution.ecocide.active svg{stroke:#000;fill:#339933}
+.era .era-institution.ecocide.throbbing svg{stroke:#339933;stroke-width:1px}
 .era .era-institution.ecocide .era-icon{height:80px}
 .era .era-institution.ecocide .biofuel{max-height:10% !important;margin-right:-2%}
 .era .era-institution.ecocide .cactus{max-height:10% !important}
 .era .era-institution.social-unrest.active svg{fill:#F00;stroke:#000}
+.era .era-institution.social-unrest.throbbing svg{stroke:#F00;stroke-width:1px}
 .era .era-institution.social-unrest .era-icon{height:75px;-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}.era .era-institution.social-unrest .era-icon.gasmask{height:50px;margin-right:-2%}
 .era .era-institution.social-unrest .era-icon.riot-police{height:50px}
 .era .era-institution.stratification{margin-top:-0.5%}.era .era-institution.stratification.active svg{stroke:#00F;fill:#FFCC02}
+.era .era-institution.stratification.throbbing svg{stroke:#FFCC02;stroke-width:1px}
 .era .era-institution.stratification .era-icon.city{height:75px;margin-left:-20px}
 .era .era-institution.stratification .era-icon.government{margin-top:-3%;height:75px}
 .era .era-institution.stratification .era-icon.bank{margin-bottom:-9px;height:60px}
 .era .era-institution.affinity-networks.active svg{stroke:#00F;fill:#0A40EB}
+.era .era-institution.affinity-networks.throbbing svg{stroke:#0A40EB;stroke-width:1px}
 .era .era-institution.sexual-liberation{margin-top:15px}.era .era-institution.sexual-liberation.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.sexual-liberation.throbbing svg{stroke:#CC33FF;stroke-width:1px}
 .era .era-institution.sexual-liberation .era-icon.making-out{height:60px}
 .era .era-institution.sexual-liberation .era-icon.naked{height:60px}
 .era .era-institution.sexual-liberation .era-icon.male{height:63px}
 .era .era-institution.sexual-liberation .era-icon.female{height:75px;margin-top:6px;margin-left:8px}
 .era .era-institution.sexual-liberation .era-icon.unicorn{margin-left:-11px;margin-top:-14px;-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}
 .era .era-institution.open-source.active svg,.era .era-institution.open-source.active circle,.era .era-institution.open-source.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.open-source.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.open-source .era-icon{height:50px}
 .era .era-institution.peace.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.peace.throbbing svg{stroke:#CC33FF;stroke-width:1px}
 .era .era-institution.peace .era-icon{height:50px}
 .era .era-institution.technology.active svg,.era .era-institution.technology.active circle,.era .era-institution.technology.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.technology.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.technology .bicycle{-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}
 .era .era-institution.technology .era-icon{height:60px}
 .era .era-institution.ecological-restoration.active svg{stroke:#000;fill:#339933}
+.era .era-institution.ecological-restoration.throbbing svg{stroke:#339933;stroke-width:1px}
 .era .era-institution.ecological-restoration .tree{height:60px}
 .era .era-institution.ecological-restoration .tree2{height:140px}
 .era .era-institution.economic-resilience.active svg,.era .era-institution.economic-resilience.active circle,.era .era-institution.economic-resilience.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.economic-resilience.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.economic-resilience .garden{height:50px}
 .era .era-institution.economic-resilience .wind-farm{height:100px}
 .era .era-institution.economic-resilience path,.era .era-institution.economic-resilience circle{fill:#fff}
 .era .era-institution.meshnet.active svg{stroke:#00F;fill:#3CF}
+.era .era-institution.meshnet.throbbing svg{stroke:#3CF;stroke-width:1px}
 .era .era-institution.meshnet .era-icon{height:50px}
 .era .era-institution.climate-change.active svg{stroke:#000;fill:#339933}
+.era .era-institution.climate-change.throbbing svg{stroke:#339933;stroke-width:1px}
 .era .era-institution.climate-change .era-icon{height:70px}
 .era .era-institution.early-robot-warfare.active svg{fill:#F00;stroke:#000}
+.era .era-institution.early-robot-warfare.throbbing svg{stroke:#F00;stroke-width:1px}
 .era .era-institution.early-robot-warfare .drone{height:70px}
 .era .era-institution.rapid-scientific-progress.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.rapid-scientific-progress.throbbing svg{stroke:#CC33FF;stroke-width:1px}
 .era .era-institution.rapid-scientific-progress .era-icon{height:70px}
 .era .era-institution.civil-unrest.active svg{fill:#F00;stroke:#000}
+.era .era-institution.civil-unrest.throbbing svg{stroke:#F00;stroke-width:1px}
 .era .era-institution.civil-unrest .era-icon{height:70px}.era .era-institution.civil-unrest .era-icon.police{height:45px}
 .era .era-institution.global-capitalism.active svg,.era .era-institution.global-capitalism.active circle,.era .era-institution.global-capitalism.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.global-capitalism.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.global-capitalism .era-icon{height:70px}
 .era .era-institution.global-capitalism .airplane{top:50%;height:20px}
 .era .era-institution.global-capitalism .ship{height:30px;-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH"}
 .era .era-institution.consumerism.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.consumerism.throbbing svg{stroke:#CC33FF;stroke-width:1px}
 .era .era-institution.consumerism .shopping{height:45px}
 .era .era-institution.consumerism .building{height:90px}
 .era .era-institution.national-decline.active svg{stroke:#00F;fill:#0A40EB}
+.era .era-institution.national-decline.throbbing svg{stroke:#0A40EB;stroke-width:1px}
 .era .era-institution.national-decline .era-icon{height:90px}
 .era .era-institution.toxic-culture.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.toxic-culture.throbbing svg{stroke:#CC33FF;stroke-width:1px}
 .era .era-institution.toxic-culture .television{height:70px}
 .era .era-institution.toxic-culture .skull{top:17%;height:35px}
 .era .era-institution.financial-coup.active svg{stroke:#00F;fill:#FFCC02}
+.era .era-institution.financial-coup.throbbing svg{stroke:#FFCC02;stroke-width:1px}
 .era .era-institution.financial-coup .bank{margin-left:-4%;height:70px}
 .era .era-institution.wage-slavery.active svg,.era .era-institution.wage-slavery.active circle,.era .era-institution.wage-slavery.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.wage-slavery.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.wage-slavery .era-icon{height:45px}
 .era .era-institution.internet.active svg{stroke:#00F;fill:#3CF}
+.era .era-institution.internet.throbbing svg{stroke:#3CF;stroke-width:1px}
 .era .era-institution.internet .era-icon{height:50px}
 .era .era-institution.exponential-growth.active svg,.era .era-institution.exponential-growth.active circle,.era .era-institution.exponential-growth.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.exponential-growth.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.exponential-growth .era-icon{height:80px}
 .era .era-institution.industrialization.active svg,.era .era-institution.industrialization.active circle,.era .era-institution.industrialization.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.industrialization.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.industrialization .era-icon{height:70px}
 .era .era-institution.urbanization.active svg,.era .era-institution.urbanization.active circle,.era .era-institution.urbanization.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.urbanization.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.urbanization .era-icon{height:80px}
 .era .era-institution.ecological-exploitation.active svg{stroke:#000;fill:#339933}
+.era .era-institution.ecological-exploitation.throbbing svg{stroke:#339933;stroke-width:1px}
 .era .era-institution.ecological-exploitation .era-icon{height:80px}
 .era .era-institution.revolution.active svg{stroke:#00F;fill:#0A40EB}
+.era .era-institution.revolution.throbbing svg{stroke:#0A40EB;stroke-width:1px}
 .era .era-institution.revolution .era-icon{height:80px}
 .era .era-institution.mass-media.active svg{stroke:#00F;fill:#3CF}
+.era .era-institution.mass-media.throbbing svg{stroke:#3CF;stroke-width:1px}
 .era .era-institution.nuclear-war.active svg{fill:#F00;stroke:#000}
+.era .era-institution.nuclear-war.throbbing svg{stroke:#F00;stroke-width:1px}
 .era .era-institution.democracy.active svg{stroke:#00F;fill:#0A40EB}
+.era .era-institution.democracy.throbbing svg{stroke:#0A40EB;stroke-width:1px}
 .era .era-institution.democracy .era-icon{height:50px}
 .era .era-institution.capitalism.active svg,.era .era-institution.capitalism.active circle,.era .era-institution.capitalism.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.capitalism.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.capitalism .era-icon{height:90px}
 .era .era-institution.science.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.science.throbbing svg{stroke:#CC33FF;stroke-width:1px}
 .era .era-institution.science .era-icon{height:50px}
 .era .era-institution.theocracy.active svg{stroke:#00F;fill:#0A40EB}
+.era .era-institution.theocracy.throbbing svg{stroke:#0A40EB;stroke-width:1px}
 .era .era-institution.theocracy .era-icon{height:80px}
 .era .era-institution.nobility.active svg{stroke:#00F;fill:#0A40EB}
+.era .era-institution.nobility.throbbing svg{stroke:#0A40EB;stroke-width:1px}
 .era .era-institution.nobility .era-icon{height:65px}
 .era .era-institution.nobility .castle{height:100px}
 .era .era-institution.guilds.active svg,.era .era-institution.guilds.active circle,.era .era-institution.guilds.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.guilds.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.guilds .era-icon{height:65px}
 .era .era-institution.guilds .guildhall{height:120px}.era .era-institution.guilds .guildhall svg{height:120px !important}
 .era .era-institution.peasants.active svg,.era .era-institution.peasants.active circle,.era .era-institution.peasants.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.peasants.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.peasants .era-icon{height:45px}
 .era .era-institution .grain svg{position:absolute}.era .era-institution .grain svg:nth-child(1){left:10px}
 .era .era-institution .grain svg:nth-child(2){left:20px}
@@ -163,65 +210,84 @@
 .era .era-institution .grain svg:nth-child(5){left:50px}
 .era .era-institution .grain svg:nth-child(6){left:60px}
 .era .era-institution.writing.active svg{stroke:#00F;fill:#3CF}
+.era .era-institution.writing.throbbing svg{stroke:#3CF;stroke-width:1px}
 .era .era-institution.bureaucracy.active svg{stroke:#00F;fill:#0A40EB}
+.era .era-institution.bureaucracy.throbbing svg{stroke:#0A40EB;stroke-width:1px}
 .era .era-institution.religion.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.religion.throbbing svg{stroke:#CC33FF;stroke-width:1px}
 .era .era-institution.empire.active svg{stroke:#00F;fill:#0A40EB}
+.era .era-institution.empire.throbbing svg{stroke:#0A40EB;stroke-width:1px}
 .era .era-institution.deforestation.active svg{stroke:#000;fill:#339933}
+.era .era-institution.deforestation.throbbing svg{stroke:#339933;stroke-width:1px}
 .era .era-institution.deforestation .tree{height:70px}
 .era .era-institution.deforestation .stump{height:10px}
 .era .era-institution.villages.active svg,.era .era-institution.villages.active circle,.era .era-institution.villages.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.villages.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.hunting.active svg,.era .era-institution.hunting.active circle,.era .era-institution.hunting.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.hunting.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.hunting .era-icon{height:45px}
 .era .era-institution.extinction.active svg{stroke:#000;fill:#339933}
+.era .era-institution.extinction.throbbing svg{stroke:#339933;stroke-width:1px}
 .era .era-institution.extinction .era-icon{height:25px}
 .era .era-institution.mysticism.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.mysticism.throbbing svg{stroke:#CC33FF;stroke-width:1px}
 .era .era-institution.mysticism .meditation{height:30px}
 .era .era-institution.mysticism .plant{height:27px}
 .era .era-institution.sainthood.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.sainthood.throbbing svg{stroke:#CC33FF;stroke-width:1px}
 .era .era-institution.sainthood .era-icon{height:30px}
 .era .era-institution.sainthood .saint{height:42px}
 .era .era-institution.domestication.active svg,.era .era-institution.domestication.active circle,.era .era-institution.domestication.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.domestication.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.domestication .era-icon{height:30px}
 .era .era-institution.domestication .cow{height:50px}
 .era .era-institution.oral-tradition.active svg{stroke:#00F;fill:#3CF}
+.era .era-institution.oral-tradition.throbbing svg{stroke:#3CF;stroke-width:1px}
 .era .era-institution.tools.active svg,.era .era-institution.tools.active circle,.era .era-institution.tools.active path{fill:#FFCC00;stroke:#000}
+.era .era-institution.tools.throbbing svg{stroke:#FFCC00;stroke-width:1px}
 .era .era-institution.tools .era-icon{height:40px}
 .era .era-institution.tools .tool{height:15px}
 .era .era-institution.councils.active svg{stroke:#00F;fill:#0A40EB}
+.era .era-institution.councils.throbbing svg{stroke:#0A40EB;stroke-width:1px}
 .era .era-institution.natural-time.active svg{fill:#CC33FF;stroke:#000}
+.era .era-institution.natural-time.throbbing svg{stroke:#CC33FF;stroke-width:1px}
 .institution-name{position:relative;height:60px;width:100%;z-index:100;pointer-events:none;text-align:center;font-size:50px;color:#FFCC00;-webkit-text-stroke:1px #FFCC00;text-shadow:3px 3px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
 #lightbox h2{margin:0}
 #lightbox .ratings{display:inline-block}
 #lightbox .action-box{margin:12px 0}#lightbox .action-box .btn-lg{display:inline-block;margin-right:24px;font-size:24px;font-weight:bold}
-#lightbox .form-box input{display:block}
-#lightbox .form-box .share-box{display:none}
-#lightbox .form-box .response-box-positive{display:none}
-#lightbox .form-box .response-box-negative{display:none}
-#lightbox .timeline{position:relative;display:inline-block;width:59%;height:192px;background:#e7e7e7;border:2px solid #fff;border-radius:6px 0 0 6px}#lightbox .timeline .inner-timeline{position:relative;height:100%;width:100%;background:#111;border-radius:6px 0 0 6px}#lightbox .timeline .inner-timeline .eras{position:relative;width:100%;height:100%}#lightbox .timeline .inner-timeline .eras .era{vertical-align:top;display:inline-block;width:25%;height:100%;border:0;border-right:1px solid #ccc;padding:15px 0 0 0;color:#444;font-size:24px;line-height:30px}
+#lightbox .form-box{display:none}#lightbox .form-box input{display:block}
+#lightbox .form-box .rating-boxes{display:inline-block;vertical-align:top}
+#lightbox .form-box .response-boxes{display:inline-block;vertical-align:top;width:60%;height:219px}#lightbox .form-box .response-boxes input{width:100%;height:20%;font-size:18px}
+#lightbox .form-box .response-boxes textarea{width:100%;height:80%;font-size:14px}
+#lightbox .form-box .response-boxes .share-box{display:none;height:100%}
+#lightbox .form-box .response-boxes .response-box-positive{display:none;height:100%}
+#lightbox .form-box .response-boxes .response-box-negative{display:none;height:100%}
+#lightbox .timeline{position:relative;display:inline-block;width:55%;height:168px;background:#e7e7e7;border:2px solid #fff;border-radius:6px 0 0 6px}#lightbox .timeline .inner-timeline{position:relative;height:100%;width:100%;background:#111;border-radius:6px 0 0 6px}#lightbox .timeline .inner-timeline .eras{position:relative;width:100%;height:100%}#lightbox .timeline .inner-timeline .eras .era{vertical-align:top;display:inline-block;width:25%;height:100%;border:0;border-right:1px solid #ccc;padding:15px 0 0 0;color:#444;font-size:24px;line-height:30px}
 #lightbox .timeline .timeline-graph{position:absolute;top:0;height:96px;width:100%}
-#lightbox .ratings,#lightbox .ratings-left,#lightbox .ratings-right{display:inline-block;vertical-align:top;border-radius:3px 3px 12px 12px}#lightbox .ratings .rating-box,#lightbox .ratings-left .rating-box,#lightbox .ratings-right .rating-box{vertical-align:top;display:block;width:100%;padding:3px;background:#e7e7e7;color:#111;margin:0}#lightbox .ratings .rating-box.strength,#lightbox .ratings-left .rating-box.strength,#lightbox .ratings-right .rating-box.strength{max-width:110px;vertical-align:top}
+#lightbox .ratings,#lightbox .ratings-left,#lightbox .ratings-right{display:none;vertical-align:top;border-radius:3px 3px 12px 12px;margin-right:12px}#lightbox .ratings .rating-box,#lightbox .ratings-left .rating-box,#lightbox .ratings-right .rating-box{vertical-align:top;display:block;background:#e7e7e7;color:#111;margin:0}#lightbox .ratings .rating-box.strength,#lightbox .ratings-left .rating-box.strength,#lightbox .ratings-right .rating-box.strength{display:none;vertical-align:top}
 #lightbox .ratings .rating-box h6,#lightbox .ratings-left .rating-box h6,#lightbox .ratings-right .rating-box h6{margin:3px}
-#lightbox .ratings .rating-box .inner-rating-box,#lightbox .ratings-left .rating-box .inner-rating-box,#lightbox .ratings-right .rating-box .inner-rating-box{width:100%;height:42px;border-radius:12px;padding:3px 2px;background-color:#111;color:#ccc}#lightbox .ratings .rating-box .inner-rating-box .buttons,#lightbox .ratings-left .rating-box .inner-rating-box .buttons,#lightbox .ratings-right .rating-box .inner-rating-box .buttons{height:22px}#lightbox .ratings .rating-box .inner-rating-box .buttons .button,#lightbox .ratings-left .rating-box .inner-rating-box .buttons .button,#lightbox .ratings-right .rating-box .inner-rating-box .buttons .button{width:18px;height:18px;display:inline-block;margin:1px 3px;border:2px solid #e7e7e7;border-radius:12px;background-color:#666;vertical-align:top;cursor:pointer}#lightbox .ratings .rating-box .inner-rating-box .buttons .button:before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons .button:before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons .button:before{content:"";display:inline-block;width:9px;height:9px;bottom:5px;left:4px;line-height:4px;border-radius:5px;position:relative;background-color:#999}
-#lightbox .ratings .rating-box .inner-rating-box .buttons .button:after,#lightbox .ratings-left .rating-box .inner-rating-box .buttons .button:after,#lightbox .ratings-right .rating-box .inner-rating-box .buttons .button:after{content:"";display:inline-block;position:relative;top:-9px;width:4px;height:4px;line-height:4px;border-radius:2px;background-color:#fff;margin-top:2px}
-#lightbox .ratings .rating-box .inner-rating-box .buttons.harm .active,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.harm .active,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.harm .active{width:18px;height:18px;display:inline-block;border:2px solid #e7e7e7;border-radius:12px;background-color:#fa0002}#lightbox .ratings .rating-box .inner-rating-box .buttons.harm .active:before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.harm .active:before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.harm .active:before{content:"";display:inline-block;width:9px;height:9px;bottom:5px;left:4px;line-height:4px;border-radius:5px;position:relative;background-color:#fb706d}
-#lightbox .ratings .rating-box .inner-rating-box .buttons.harm .active:after,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.harm .active:after,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.harm .active:after{content:"";display:inline-block;position:relative;top:-9px;width:4px;height:4px;line-height:4px;border-radius:2px;background-color:#fff;margin-top:2px}
-#lightbox .ratings .rating-box .inner-rating-box .buttons.help .active,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.help .active,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.help .active{width:18px;height:18px;display:inline-block;border:2px solid #e7e7e7;border-radius:12px;background-color:#292}#lightbox .ratings .rating-box .inner-rating-box .buttons.help .active:before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.help .active:before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.help .active:before{content:"";display:inline-block;width:9px;height:9px;bottom:5px;left:4px;line-height:4px;border-radius:5px;position:relative;background-color:#02e323}
-#lightbox .ratings .rating-box .inner-rating-box .buttons.relevance .active,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.relevance .active,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.relevance .active{width:18px;height:18px;display:inline-block;border:2px solid #e7e7e7;border-radius:12px;background-color:#2D4CFF}#lightbox .ratings .rating-box .inner-rating-box .buttons.relevance .active:before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.relevance .active:before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.relevance .active:before{content:"";display:inline-block;width:9px;height:9px;bottom:5px;left:4px;line-height:4px;border-radius:5px;position:relative;background-color:#7D8EF1}
-#lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button{margin:1px;background-color:#fcedb4}#lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button:after,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button:after,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button:after{display:none}
+#lightbox .ratings .rating-box .inner-rating-box,#lightbox .ratings-left .rating-box .inner-rating-box,#lightbox .ratings-right .rating-box .inner-rating-box{width:100%;border-radius:12px;padding:3px 2px;background-color:#111;color:#ccc}#lightbox .ratings .rating-box .inner-rating-box .buttons .button,#lightbox .ratings-left .rating-box .inner-rating-box .buttons .button,#lightbox .ratings-right .rating-box .inner-rating-box .buttons .button{width:40px;height:40px;display:inline-block;margin:1px 3px;border:2px solid #e7e7e7;border-radius:50%;background-color:#666;vertical-align:top;cursor:pointer}#lightbox .ratings .rating-box .inner-rating-box .buttons .button:before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons .button:before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons .button:before{content:"";display:inline-block;width:28px;height:28px;bottom:10px;top:1px;left:7px;line-height:4px;border-radius:50%;position:relative;background-color:#999}
+#lightbox .ratings .rating-box .inner-rating-box .buttons .button:after,#lightbox .ratings-left .rating-box .inner-rating-box .buttons .button:after,#lightbox .ratings-right .rating-box .inner-rating-box .buttons .button:after{content:"";display:inline-block;position:relative;top:-35px;left:21px;width:10px;height:10px;line-height:4px;border-radius:50%;background-color:#fff;margin-top:2px}
+#lightbox .ratings .rating-box .inner-rating-box .buttons.harm .active,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.harm .active,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.harm .active{background-color:#fa0002}#lightbox .ratings .rating-box .inner-rating-box .buttons.harm .active:before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.harm .active:before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.harm .active:before{content:"";background-color:#fb706d}
+#lightbox .ratings .rating-box .inner-rating-box .buttons.harm .active:after,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.harm .active:after,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.harm .active:after{background-color:#fff}
+#lightbox .ratings .rating-box .inner-rating-box .buttons.help .active,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.help .active,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.help .active{background-color:#292}#lightbox .ratings .rating-box .inner-rating-box .buttons.help .active:before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.help .active:before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.help .active:before{content:"";background-color:#02e323}
+#lightbox .ratings .rating-box .inner-rating-box .buttons.relevance .active,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.relevance .active,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.relevance .active{background-color:#2D4CFF}#lightbox .ratings .rating-box .inner-rating-box .buttons.relevance .active:before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.relevance .active:before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.relevance .active:before{background-color:#7D8EF1}
+#lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button{background-color:#fcedb4}#lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button:after,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button:after,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button:after{display:none}
 #lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button:nth-child(1),#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button:nth-child(1),#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button:nth-child(1){background-color:#cbb482}#lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button:nth-child(1):before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button:nth-child(1):before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button:nth-child(1):before{content:"";display:inline-block;width:14px;height:18px;bottom:2px;left:2px;line-height:4px;border-radius:8px;position:relative;background-color:#555}
 #lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button:nth-child(2),#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button:nth-child(2),#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button:nth-child(2){background-color:#f1d39d}#lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button:nth-child(2):before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button:nth-child(2):before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button:nth-child(2):before{content:"";display:inline-block;width:12px;height:16px;bottom:1px;left:4px;line-height:4px;border-radius:6px;position:relative;background-color:#555}
 #lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button:nth-child(3),#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button:nth-child(3),#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button:nth-child(3){background-color:#f1d39d}#lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button:nth-child(3):before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button:nth-child(3):before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button:nth-child(3):before{content:"";display:inline-block;width:9px;height:16px;bottom:1px;left:7px;line-height:4px;border-radius:0 8px 8px 0;position:relative;background-color:#555}
 #lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button:nth-child(4),#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button:nth-child(4),#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button:nth-child(4){background-color:#555;border-color:#555}#lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button:nth-child(4):before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button:nth-child(4):before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button:nth-child(4):before{content:"";display:inline-block;width:14px;height:18px;bottom:2px;left:-2px;line-height:4px;border-radius:12px 8px 8px 12px;position:relative;background-color:#fcedb4}
 #lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button:nth-child(5),#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button:nth-child(5),#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button:nth-child(5){background-color:#fff9c9;border-color:#fff9c9}#lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button:nth-child(5):before,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button:nth-child(5):before,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button:nth-child(5):before{content:"";display:none}
-#lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button.selected,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button.selected,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button.selected{vertical-align:top;-moz-box-shadow:0px 0px 2px 2px #f1d39d;-webkit-box-shadow:0px 0px 2px 2px #f1d39d;box-shadow:0px 0px 2px 2px #f1d39d}
-#lightbox .ratings .rating-box .inner-rating-box .rating-description,#lightbox .ratings-left .rating-box .inner-rating-box .rating-description,#lightbox .ratings-right .rating-box .inner-rating-box .rating-description{text-align:center;font-size:10px}
-#lightbox .diagram{display:inline-block;vertical-align:top;height:192px;width:25%;border:3px solid #e7e7e7;border-radius:0 12px 12px 0;background-color:#111}#lightbox .diagram i{font-size:30px}
+#lightbox .ratings .rating-box .inner-rating-box .buttons.strength .button.active,#lightbox .ratings-left .rating-box .inner-rating-box .buttons.strength .button.active,#lightbox .ratings-right .rating-box .inner-rating-box .buttons.strength .button.active{vertical-align:top;-moz-box-shadow:0px 0px 3px 3px #f1d39d;-webkit-box-shadow:0px 0px 3px 3px #f1d39d;box-shadow:0px 0px 3px 3px #f1d39d}
+#lightbox .ratings .rating-box .inner-rating-box .rating-description,#lightbox .ratings-left .rating-box .inner-rating-box .rating-description,#lightbox .ratings-right .rating-box .inner-rating-box .rating-description{text-align:center;font-size:18px}
+#lightbox .description{overflow-y:auto}
+#lightbox .diagram{display:inline-block;vertical-align:top;height:168px;width:25%;border:3px solid #e7e7e7;border-radius:0 12px 12px 0;background-color:#111}#lightbox .diagram i{font-size:30px}
 #lightbox .diagram i.icon-arrow-down{display:block;margin:5px;font-size:12px}
 #lightbox .diagram i.icon-certificate{color:#fff9c9}
 #lightbox .diagram i.icon-magic{color:#58d3d3}
 #lightbox .diagram i.icon-male,#lightbox .diagram i.icon-female,#lightbox .diagram i.icon-group{color:#e8c158}
-#lightbox .diagram .diagram-left{display:inline-block;width:22%;margin:10%;text-align:center}
-#lightbox .diagram .diagram-right{display:inline-block;vertical-align:top;width:35%;margin:10%;font-weight:bold}#lightbox .diagram .diagram-right p{margin:0px 0 18px 0}
+#lightbox .diagram .diagram-left{display:inline-block;width:22%;margin:6%;text-align:center}
+#lightbox .diagram .diagram-right{display:inline-block;vertical-align:top;width:55%;margin:5%;font-weight:bold}#lightbox .diagram .diagram-right p{margin:10px 0 30px 0}
 #create-institution .left{width:62%;display:inline-block}
 #create-institution .right{vertical-align:top;width:37%;display:inline-block}
 #create-institution input{display:block;width:100%;min-height:50px;background:inherit;margin:10px 0 0 0;border:2px solid #e7e7e7;border-right:0;border-radius:6px 0 0 6px;padding:12px;font-size:24px;font-weight:bold;color:#fff}#create-institution input:hover{background:#555}
@@ -250,8 +316,8 @@
 .theme-2 #lightbox{background:#111111;background:-moz-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #111), color-stop(7%, #3a3a3a), color-stop(100%, #515151));background:-webkit-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-o-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:-ms-linear-gradient(top, #111 0, #3a3a3a 7%, #515151 100%);background:linear-gradient(to bottom, #111 0, #3a3a3a 7%, #515151 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111', endColorstr='#515151', GradientType=0);}.theme-2 #lightbox .close{color:#333}
 .theme-2 .era{border-bottom:6px solid #bbb}.theme-2 .era .era-stage{border-bottom:100px solid #ccc}
 .theme-2 .era .era-institution .era-icon svg{fill:#3c5e7f;stroke:#fff}
-*{-moz-box-sizing:border-box;box-sizing:border-box}
-@font-face{font-family:abaddon;src:url('/fonts/abaddon.TTF')}body{color:#ddd;background:url(/images/wood-walnut-background-tile.jpg);font-family:Arial, calibri, sans;}body #dont-panic{color:#888}
+@media only screen and (min-width:768px){}@media only screen and (max-width:767px){}@media only screen and (max-width:767px) and (orientation:portrait){}*{-moz-box-sizing:border-box;box-sizing:border-box}
+@font-face{font-family:abaddon;src:url('/fonts/abaddon.TTF')}body{color:#ddd;background:url(/images/wood-walnut-background-tile.jpg);font-family:Arial, calibri, sans;overflow-y:auto;overflow-x:hidden;}body #dont-panic{color:#888}
 body .skin{position:absolute;top:0;bottom:0;left:0;right:0;background:url(/images/scratched-metal.jpg);opacity:0.8;border-radius:10px;z-index:0}
 body #content{-webkit-box-shadow:0 8px 22px #323232;-moz-box-shadow:0 8px 22px #323232;box-shadow:0 8px 22px #323232;background-color:#ccc}
 body #branding{color:#888}body #branding h1{text-shadow:none}
@@ -268,10 +334,18 @@ body #header #branding h4{display:inline-block;position:absolute;right:65px;top:
 body #header #tagline{display:inline-block;float:left;color:#333;margin-left:3%;max-width:25%}body #header #tagline h4{font-size:20px;font-weight:bold;font-family:cursive,sans-serif}
 body #header #nav{display:inline-block;margin-top:12px;float:left}body #header #nav ul{list-style-type:none}body #header #nav ul li{display:inline-block;padding:10px;font-weight:bold;border:1px solid #000;border-width:1px 1px 3px 1px;margin-right:4px;border-radius:3px 3px 2px 2px;color:#000;background:rgba(255,255,255,0.3);font-size:14px}body #header #nav ul li.clicked{border-bottom:1px solid;position:relative;top:2px}
 body #header #nav ul li a{text-decoration:none;color:#000}
-body #content{position:relative;padding:0;max-width:1000px;margin-top:20px;border:2px solid #ccc;border-radius:12px}body #content #welcome{overflow-y:auto;max-height:100%;padding-right:20px}
+body #content{position:relative;padding:0;max-width:1000px;margin-top:20px;border:1px solid #ccc;border-radius:12px}body #content #welcome{overflow-y:auto;max-height:100%;padding-right:20px;padding:0 20%}
 body #content #static{display:none;position:absolute;top:0;bottom:0;left:0;right:0;background:url(/images/static.gif);z-index:1000;opacity:0.3;pointer-events:none}
-body #content #lightbox{position:relative;height:0px;z-index:2000;overflow:hidden;overflow-y:auto;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;-o-transition:all .5s ease-out;transition:all .5s ease-out}body #content #lightbox.active{display:block;height:100%}
-body #content #lightbox .close{position:absolute;top:10px;right:21px}body #content #lightbox .close i{color:#fff}
-body #content #lightbox #lightbox-left{display:inline-block;width:17%;overflow-y:auto}body #content #lightbox #lightbox-left ul{list-style-type:none;font-weight:bold;text-transform:uppercase;padding-left:0}body #content #lightbox #lightbox-left ul li{font-weight:normal;text-transform:none}
-body #content #lightbox #lightbox-right{display:inline-block;max-width:81%;padding-left:12px;vertical-align:top;overflow-y:auto}body #content #lightbox #lightbox-right #lightbox-header{height:42px}body #content #lightbox #lightbox-right #lightbox-header #lightbox-title{display:inline-block;margin-top:0}
-body #content .screen{position:relative;background:#000;overflow:hidden;height:490px;margin:0 20px 0 20px;border:1px solid #ccc;padding:20px}
+body #content #lightbox{position:relative;height:0px;z-index:2000;overflow:hidden;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}body #content #lightbox.active{display:block;height:100%;margin-bottom:20px}
+body #content #lightbox .lightbox-button{position:absolute;font-size:24px;cursor:pointer}body #content #lightbox .lightbox-button i{color:#fff}body #content #lightbox .lightbox-button i:after{color:#fff}
+body #content #lightbox .lightbox-button i:before{color:#fff}
+body #content #lightbox .lightbox-close{top:10px;right:21px}
+body #content #lightbox .lightbox-menu{top:10px;right:51px}
+body #content #lightbox #lightbox-left{display:inline-block;width:17%;height:100%;overflow-y:auto}body #content #lightbox #lightbox-left ul{list-style-type:none;font-weight:bold;text-transform:uppercase;padding-left:0;font-size:16px}body #content #lightbox #lightbox-left ul li{font-weight:normal;text-transform:capitalize;cursor:pointer}body #content #lightbox #lightbox-left ul li:hover{color:#fff}
+body #content #lightbox #lightbox-right{display:inline-block;width:81%;height:83%;padding-left:12px;vertical-align:top}body #content #lightbox #lightbox-right #lightbox-header #lightbox-title{display:inline-block;margin-top:0;text-transform:capitalize}
+body #content #lightbox #lightbox-right #lightbox-content{height:87%;overflow-y:scroll;padding:0 12px}
+body #content #lightbox #lightbox-footer{background-color:#000;width:79%;position:absolute;right:12px;bottom:0}
+body #content .screen{position:relative;background:#000;overflow:hidden;height:490px;margin:0 33px 0 33px;border:1px solid #ccc;padding:20px}
+::-webkit-scrollbar{width:12px}
+::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border-radius:10px;background-color:#e4e4e4;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f22), color-stop(.15, #f2f), color-stop(.3, #22f), color-stop(.45, #2ff), color-stop(.6, #2f2), color-stop(.75, #2f2), color-stop(.9, #ff2), color-stop(1, #f22));color:transparent}
+::-webkit-scrollbar-thumb{border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.8)}

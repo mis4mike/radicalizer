@@ -2,12 +2,14 @@ exports.setup = function (app) {
 
   app.get('/institutions/', function(req, res) {
     if(!req.query.name){
-      res.render('institutions/index', {title:'The Pieces'});
+      radicalizer.institutions.getByName(null, req, res);
     } else {
       radicalizer.institutions.getByName(req.query.name, req, res);
     }
   });
-
+  app.get('/institutions/list/', function(req, res) {
+      radicalizer.institutions.getList(req, res);
+  });
   app.get('/institutions/create/', function(req, res) {
     res.render('institutions/create', {title:'Make a New Insitution'});
   });

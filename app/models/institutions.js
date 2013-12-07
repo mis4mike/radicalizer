@@ -21,13 +21,28 @@ exports.getByName = function(name, req, res) {
   var Institution = mongoose.model('Institution', institutionSchema);
   Institution.find({name: name}).exec(function (err, result) {
     if (!err) {
-      res.send(JSON.stringify(result[0]));
+      if(result[0] == undefined) {
+        Institution.find({}).exec(function (err, result) {
+          res.send(JSON.stringify(result));
+        });
+      } else {
+        res.send(JSON.stringify(result[0]));
+      }
     } else {
       res.send(JSON.stringify( err ));
     }
   });
 }
-
+exports.getList = function(req, res) {
+  var Institution = mongoose.model('Institution', institutionSchema);
+  Institution.find({}).exec(function (err, result) {
+    if (!err) {
+      res.send(JSON.stringify(result));
+    } else {
+      res.send(JSON.stringify( err ));
+    }
+  }); 
+}
 exports.createInstitution = function( name, 
                                       type, 
                                       relevance, 

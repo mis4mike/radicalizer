@@ -1,0 +1,21 @@
+.action-box
+  .rock-it.btn-lg.btn-success 
+    i.icon-chevron-down  Rock It! 
+    i.icon-thumbs-up
+  .block-it.btn-lg.btn-danger 
+    i.icon-chevron-down  Block It! 
+    i.icon-thumbs-down
+  .share-it.btn-lg.btn-primary 
+    i.icon-chevron-down  Share It!
+.form-box
+  .rating-boxes
+    include _ratings
+  .response-boxes
+    .share-box
+      img(src="http://las.arts.ubc.ca/files/2010/08/facebook-button.jpg")
+    .response-box-positive
+      input(placeholder="How can we use it?")
+      textarea(placeholder="Details")
+    .response-box-negative
+      input(placeholder="How do we lose it?")
+      textarea(placeholder="Details")

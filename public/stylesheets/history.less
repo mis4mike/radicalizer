@@ -13,6 +13,12 @@
       stroke: #000;
     }
   }
+  &.throbbing {
+    svg {
+      stroke: #F00;
+      stroke-width: 1px;
+    }
+  }  
 }
 .economic { //ORANGE
   &.active {
@@ -21,6 +27,12 @@
       stroke: #000;
     }
   }
+  &.throbbing {
+    svg {
+      stroke: #FFCC00;
+      stroke-width: 1px;
+    }
+  }    
 }
 .money { //YELLOW (Finance)
   &.active {
@@ -29,6 +41,12 @@
       fill: #FFCC02;
     }
   }  
+  &.throbbing {
+    svg {
+      stroke: #FFCC02;
+      stroke-width: 1px;
+    }
+  } 
 }
 .natural { //GREEN
   &.active {
@@ -37,6 +55,12 @@
       fill: #339933;
     }
   }
+  &.throbbing {
+    svg {
+      stroke: #339933;
+      stroke-width: 1px;
+    }
+  } 
 }
 .media { //TEAL
   &.active {
@@ -45,6 +69,12 @@
       fill: #3CF;
     }
   }  
+  &.throbbing {
+    svg {
+      stroke: #3CF;
+      stroke-width: 1px;
+    }
+  } 
 }
 .politics { //BLUE
   &.active {
@@ -53,6 +83,12 @@
       fill: #0A40EB;
     }
   }  
+  &.throbbing {
+    svg {
+      stroke: #0A40EB;
+      stroke-width: 1px;
+    }
+  } 
 }
 .cultural { //PURPLE - Sources of ideology or truth in society
   &.active {
@@ -61,7 +97,14 @@
       stroke: #000;
     }
   }   
+  &.throbbing {
+    svg {
+      stroke: #CC33FF;
+      stroke-width: 1px;
+    }
+  } 
 }
+
 .era-container {
   position: relative;
   height: auto;
@@ -193,7 +236,11 @@
       &.lower-sky {
         top: 10%;
         z-index: 50;
-      }      
+      }    
+      &.lowest-sky {
+        top: 15%;
+        z-index: 50;
+      }   
       &.layer-0 {
         bottom: 0%;
         z-index: 70;
